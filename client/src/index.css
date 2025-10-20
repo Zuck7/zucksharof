@@ -1,0 +1,283 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh;
+  background-color: #f9f9f9; 
+  width: 100%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px; 
+  border: 3px solid #646cff;;
+}
+
+.row img {
+  width: 750px;
+  height: 480px;
+  object-fit: cover;
+  border-right: 3px solid #646cff;
+}
+
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+  width: 900px;
+
+}
+
+.title{
+  background-color: #1f84ff;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-container {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*My logo*/
+.zuck{
+  width: 70px;
+  height: 70px;
+}
+
+/*Navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4842f5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Style the Link components directly */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*All other images*/
+.images{
+  width: 70px;
+  height: 70px;
+}
+
+/*Description on the Home page*/
+.description{
+  font-weight: bold;
+  align-items: start;
+}
+
+/*Skills on the Home page*/
+.skills{
+  text-align-last:start;
+}
+
+#about{
+  border-bottom: 2px solid #646cff;
+}
+
+#techskills{
+  border-bottom: 2px solid #646cff;
+}
+
+#education{
+  border-bottom: 2px solid #646cff;
+}
+
+#expdetails{
+  text-align: start;
+}
+
+#experience{
+  border-bottom: 3px solid #646cff;
+}
+
+.expInfo{
+  border-bottom: 1px solid #646cff;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.3);
+}
+
+.submit-btn {
+  background-color: #646cff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #535bf2;
+}
+
+.contact-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #646cff;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #646cff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+}
