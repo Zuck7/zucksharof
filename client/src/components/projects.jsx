@@ -23,7 +23,7 @@ const data = [
 
 function Projects() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="py-12">
       <h3 className="text-5xl font-bold text-gray-900 text-center mb-16">Projects</h3>
       <ListComponent items={data} />
       

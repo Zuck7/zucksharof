@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';  // Add Outlet import
 import zuck from '../assets/zuck.png';
 
 function Layout() {
@@ -12,45 +12,42 @@ function Layout() {
             Zuhriddin (Zuck) Sharofiddinov
           </h2>
         </div>
-        
         <div className="flex items-center gap-6">
-          <Link 
-            to="/" 
-            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          <Link
+            to="/"
+            className="hover:text-indigo-600 transition-colors duration-200 font-medium text-gray-700"
           >
             Home
           </Link>
-          <Link 
-            to="/about" 
-            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          <Link
+            to="/about"
+            className="hover:text-indigo-600 transition-colors duration-200 font-medium text-gray-700"
           >
             About Me
           </Link>
-          <Link 
-            to="/projects" 
-            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          <Link
+            to="/projects"
+            className="hover:text-indigo-600 transition-colors duration-200 font-medium text-gray-700"
           >
             Projects
           </Link>
-          <Link 
-            to="/services" 
-            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          <Link
+            to="/services"
+            className="hover:text-indigo-600 transition-colors duration-200 font-medium text-gray-700"
           >
             Services
           </Link>
-          <Link 
-            to="/contact" 
-            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          <Link
+            to="/contact"
+            className="hover:text-indigo-600 transition-colors duration-200 font-medium text-gray-700"
           >
             Contact
           </Link>
         </div>
       </nav>
-
-      {/* Main Content Area */}
-      <div className="container mx-auto px-4 py-8">
-        {/* This is where your page content will be rendered */}
-      </div>
+      
+      {/* Main Content Area - Replace the div with Outlet */}
+      <Outlet />
     </div>
   );
 }
