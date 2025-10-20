@@ -1,11 +1,11 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import zuck from '../assets/zuck.png';
 
 function Layout() {
   return (
-    <div id='animated' className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 relative flex flex-col">
+    <div id='animated' className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
       {/* Navigation */}
-      <nav className="bg-transparent backdrop-blur-sm px-8 py-4 flex items-center justify-between relative z-20">
+      <nav className="bg-transparent backdrop-blur-sm px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img src={zuck} alt="Logo" className="w-16 h-16 rounded-lg" />
           <h2 className="text-xl font-semibold">
@@ -48,8 +48,8 @@ function Layout() {
       </nav>
 
       {/* Main Content Area */}
-      <div className="flex-1 container mx-auto px-4 py-8 relative z-10">
-        <Outlet />
+      <div className="container mx-auto px-4 py-8">
+        {/* This is where your page content will be rendered */}
       </div>
     </div>
   );
