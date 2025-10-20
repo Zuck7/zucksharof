@@ -1,24 +1,58 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import zuck from '../assets/zuck.png';
 
-function Layout(){
-    return(
-       <>
-       <div id='animated'>
-       <h2>Zuhriddin (Zuck) Sharofiddinov</h2>
-       <nav className="navbar">
-        <img src={zuck} alt="logo" className="zuck"/>
-        <Link to="/" >Home</Link>
-        <Link to="/about" >About Me</Link>
-        <Link to="/projects" >Projects</Link>
-        <Link to="/services" >Services</Link>
-        <Link to="/contact" >Contact</Link>
-       </nav>
-       <br />
-       <hr />
-       </div>
-       </>
-    );
+function Layout() {
+  return (
+    <div id='animated' className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 relative flex flex-col">
+      {/* Navigation */}
+      <nav className="bg-transparent backdrop-blur-sm px-8 py-4 flex items-center justify-between relative z-20">
+        <div className="flex items-center gap-4">
+          <img src={zuck} alt="Logo" className="w-16 h-16 rounded-lg" />
+          <h2 className="text-xl font-semibold">
+            Zuhriddin (Zuck) Sharofiddinov
+          </h2>
+        </div>
+        
+        <div className="flex items-center gap-6">
+          <Link 
+            to="/" 
+            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          >
+            Home
+          </Link>
+          <Link 
+            to="/about" 
+            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          >
+            About Me
+          </Link>
+          <Link 
+            to="/projects" 
+            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          >
+            Projects
+          </Link>
+          <Link 
+            to="/services" 
+            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          >
+            Services
+          </Link>
+          <Link 
+            to="/contact" 
+            className="hover:text-indigo-200 transition-colors duration-200 font-medium"
+          >
+            Contact
+          </Link>
+        </div>
+      </nav>
+
+      {/* Main Content Area */}
+      <div className="flex-1 container mx-auto px-4 py-8 relative z-10">
+        <Outlet />
+      </div>
+    </div>
+  );
 }
 
 export default Layout;
