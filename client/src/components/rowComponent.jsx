@@ -1,22 +1,19 @@
 import React from 'react';
 
 const RowComponent = ({ item }) => {
-  return (
-    <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto px-6 py-16">
-      {/* Image */}
-      <img 
-        src={item.imagePath} 
-        alt="Row content" 
-        className="w-80 h-80 rounded-3xl object-cover shadow-2xl flex-shrink-0" 
-      />
-      
-      {/* Text Content */}
-      <div className="flex-1">
-        <h3 className="text-4xl font-bold text-gray-900 mb-6">{item.title}</h3>
-        <p className="text-lg text-gray-700 leading-relaxed">{item.text}</p>
+    return (
+      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 mb-8">
+        <div className="md:flex">
+          <div className="md:flex-shrink-0">
+            <img src={item.imagePath} alt={item.title} className="h-64 w-full md:w-64 object-cover" />
+          </div>
+          <div className="p-8">
+            <h3 className="text-2xl font-bold text-indigo-600 mb-4">{item.title}</h3>
+            <p className="text-gray-700 leading-relaxed">{item.text}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  );
+    );
 };
 
 export default RowComponent;
