@@ -24,7 +24,7 @@ const data = [
 
 function Services() {
     return (
-        <div className="min-h-screen py-16 px-4">
+        <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-5xl font-bold text-gray-900 text-center mb-16">Services</h1>
                 <ListComponent items={data} />

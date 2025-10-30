@@ -7,12 +7,12 @@ const data = [
     {
         imagePath: zuhriddin,
         title: 'About Me',
-        text: "Hi, my name is Zuhriddin (Zuck) Sharofiddinov. I'm from Tashkent, Uzbekistan, a country with rich history, which now raises intelligent youth. For the past 3 years, I have been doing marketing for international companies. The most valuable experience was with Infinix Mobility (gadget production), where I gained international experience. But I chose to change my career path and break into tech. I thought software engineering would be the best choice, as it includes closely collaborating with the business and take part in its decision in terms of its software. This is what I had left in myself after my marketing experience, which is to work with front team. I have been in software engineering for one year and so far, I have learnt Web Development, Database Management and Systems Design. I assume these are three most valuable skills that I software engineer must have. You can check my portfolio and let me know of your any questions through my contacts."
+        text: "Hi, my name is Zuhriddin (Zuck) Sharofiddinov. I'm from Tashkent, Uzbekistan, a country with rich history, which now raises intelligent youth. For the past 3 years, I have been doing marketing for international companies. The most valuable experience was with Infinix Mobility (gadget production), where I gained international experience. But I chose to change my career path and break into tech. I thought software engineering would be the best choice, as it includes closely collaborating with the business and take part in its decision in terms of its software. This is what I had led myself after my marketing experience, which is to work with front team. I have been in software engineering for one year and so far, I have learnt Web Development, Database Management and Systems Design. I assume these are three most valuable skills that I software engineer must have. You can check my portfolio and let me know of your any questions through my contacts."
     }, ]
 
     function About() {
         return (
-            <div className="min-h-screen py-16 px-4">
+            <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-5xl font-bold text-gray-900 text-center mb-16">About Me</h1>
                 <ListComponent items={data} />

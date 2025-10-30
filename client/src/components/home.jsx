@@ -1,6 +1,6 @@
 function Home(){
     return(
-        <div className="min-h-screen py-16 px-4">
+        <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
             {/* Hero Section */}
             <section className="max-w-4xl mx-auto text-center mb-20">
                 <h1 className="text-5xl font-bold text-gray-900 mb-6">Welcome to My Portfolio</h1>

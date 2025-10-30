@@ -8,7 +8,6 @@ const data = [
         imagePath: pokedex,
         title: 'Pokedex Project',
         text: "Pokedex Application - an application where users can search for Pokemon by name or ID, view their details in a styled card, open a modal to view more information, and add up to 6 Pokemon to a favourites list stored in localStorage. It uses PokeAPI to fetch Pokemon data."
-        
     }, 
     {
         imagePath: mobistore,
@@ -24,7 +23,7 @@ const data = [
 
 function Projects() {
     return (
-        <div className="min-h-screen py-16 px-4">
+        <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-5xl font-bold text-gray-900 text-center mb-16">Projects</h1>
                 <ListComponent items={data} />

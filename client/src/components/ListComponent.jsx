@@ -4,7 +4,7 @@ function ListComponent({ items }) {
     return (
         <div className="list">
             {items.map((itemList, index) => (
-                <RowComponent key={index} item={itemList} />
+                <RowComponent key={index}  item={itemList} />
             ))}
         </div>
     );
