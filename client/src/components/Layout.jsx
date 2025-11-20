@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import zuck from '../assets/zuck.png';
-import { isAuthe}
+import { isAuthenticated, getUsername, clearJWT } from './auth/auth-helper';
 
 function Layout(){
 
-  const location = useLocation();
+  // const location = useLocation();
+
+  const signoutClick = () => {
+    clearJWT();
+  }
   return(
     <>
       <div id='animated' className="bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
@@ -20,6 +24,17 @@ function Layout(){
             <Link to="/projects" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Projects</Link>
             <Link to="/services" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Services</Link>
             <Link to="/contact" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Contact</Link>
+            <Link to="/inventory/list">
+                    <i className="fa-regular fa-rectangle-list"></i>Inventory List
+                </Link>
+            {!isAuthenticated() &&
+                    <Link to="/users/signin">
+                        <i className="fa-solid fa-right-to-bracket"></i> Signin
+                    </Link>}
+                {isAuthenticated() &&
+                    <Link to="/" onClick={signoutClick}>
+                        <i className="fa-solid fa-right-from-bracket"></i> Sign-out ({getUsername()})
+                    </Link>}
           </div>
         </nav>
         {/* <br />
