@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import zuck from '../assets/zuck.png';
+import { isAuthe}
 
 function Layout(){
+
+  const location = useLocation();
   return(
     <>
       <div id='animated' className="bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
