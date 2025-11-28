@@ -2,8 +2,8 @@ let apiURL = import.meta.env.VITE_APP_APIURL
 
 const signin = async (user) => {
     try {
-        let response = await fetch(apiURL + '/auth/signin', {
-            method: 'GET',
+        let response = await fetch(apiURL + '/api/auth/signin', {
+            method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
