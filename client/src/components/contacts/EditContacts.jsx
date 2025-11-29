@@ -1,26 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import ProjectsModel from "../../datasource/projectsModel";
-import { update, read } from "../../datasource/api-project";
-import ProjectsForm from "./ProjectsForm";
+import ContactsModel from "../../datasource/contactsModel";
+import { update, read } from "../../datasource/api-contact";
+import ContactsForm from "./ContactsForm";
 
-const EditProject = () => {
+const EditContact = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const [project, setProject] = useState(new ProjectsModel());
+    const [contact, setContact] = useState(new ContactsModel());
     const [errorMsg, setErrorMsg] = useState('')
 
     // When the component loads.
     useEffect(() => {
         read(id).then(data => {
             if (data) {
-                setProject(new ProjectsModel(
+                setContact(new ContactsModel(
                     data.id,
-                    data.item,
-                    data.qty,
-                    data.goal,
-                    data.status,
-                    data.message,
+                    data.firstname,
+                    data.lastname,
+                    data.email,
+                    data.phone_number
                 ));
             } else {
                 setErrorMsg(data.message);
@@ -34,26 +33,25 @@ const EditProject = () => {
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-        setProject(formData => ({ ...formData, [name]: value }));
+        setContact(formData => ({ ...formData, [name]: value }));
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("Submitting product: ", project);
+        console.log("Submitting Contact: ", contact);
 
-        const submitProject = {
-            id: project.id,
-            item: project.item,
-            qty: project.qty,
-            goal: project.goal,
-            message: project.message.toString(),
-            status: project.status,
+        const submitContact = {
+            id: contact.id,
+            firstname: contact.firstname,
+            lastname: contact.lastname,
+            email: contact.email,
+            phone_number: contact.phone_number
         };
 
-        update(submitProject, id)
+        update(submitContact, id)
             .then(data => {
                 if (data && data.success) {
                     alert(data.message);
-                    navigate("/projects/list");
+                    navigate("/contacts/list");
                 } else {
                     setErrorMsg(data.message);
                 }
@@ -69,10 +67,10 @@ const EditProject = () => {
         <div className="container" style={{ paddingTop: 10 }}>
             <div className="row">
                 <div className="offset-md-3 col-md-6">
-                    <h1>Edit Project</h1>
+                    <h1>Edit Contact</h1>
                     <p className="flash"><span>{errorMsg}</span></p>
-                    <ProjectsForm
-                        project={project}
+                    <ContactsForm
+                        contact={contact}
                         handleChange={handleChange}
                         handleSubmit={handleSubmit}
                     />
@@ -82,4 +80,4 @@ const EditProject = () => {
     );
 }
 
-export default EditProject;
+export default EditContact;

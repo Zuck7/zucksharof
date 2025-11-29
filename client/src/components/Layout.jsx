@@ -24,8 +24,14 @@ function Layout(){
             <Link to="/projects/list">
                     <i className="fa-regular fa-rectangle-list"></i>Project List
                 </Link>
-            <Link to="/services" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Services</Link>
-            <Link to="/contact" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Contact</Link>
+
+            <Link to="/services/list">
+                    <i className="fa-regular fa-rectangle-list"></i>Service List
+                </Link>
+
+            <Link to="/contacts/list">
+                    <i className="fa-regular fa-rectangle-list"></i>Contact List
+                </Link>
             <Link to="/inventory/list">
                     <i className="fa-regular fa-rectangle-list"></i>Inventory List
                 </Link>

@@ -24,7 +24,7 @@ const Signup = () => {
                 .then(data => {
                     if (data && data.success) {
                         alert(data.message);
-                        navigate('/users/signup');
+                        navigate('/users/signin');
                     } else {
                         setErrorMsg(data.message);
                     }
