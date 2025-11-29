@@ -6,6 +6,9 @@ import Home from './components/Home.jsx';
 import NotFound from './components/NotFound.jsx';
 import Contact from './components/Contact.jsx';
 import Layout from './components/Layout.jsx';
+import ListProject from "./components/projects/ListProjects.jsx";
+import AddProject from "./components/projects/AddProjects.jsx";
+import EditProject from "./components/projects/EditProjects.jsx";
 import ListInventory from "./components/inventory/ListInventory";
 import AddInventory from "./components/inventory/AddInventory";
 import EditInventory from "./components/inventory/EditInventory";
@@ -20,7 +23,9 @@ function MainRouter(){
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/list" element={<ListProject />} />
+                <Route path="/projects/add" element={<AddProject />} />
+                <Route path="/projects/edit/:id" element={<EditProject />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/users/signin" element={<Signin />} />
