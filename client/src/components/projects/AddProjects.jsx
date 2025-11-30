@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectsModel from "../../datasource/projectsModel";
-import { create } from "../../datasource/api-inventory";
+import { create } from "../../datasource/api-project";
 import ProjectsForm from "./ProjectsForm";
 
 const AddProjects = () => {
@@ -24,7 +24,7 @@ const AddProjects = () => {
             qty: project.qty,
             goal: project.goal,
             message: project.message.toString(),
-            status: product.status,
+            status: project.status,
         };
 
         create(submitProject)
