@@ -1,10 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import Projects from './components/projects.jsx';
 import About from './components/About.jsx';
-import Services from './components/Services.jsx';
 import Home from './components/Home.jsx';
 import NotFound from './components/NotFound.jsx';
-import Contact from './components/Contact.jsx';
 import Layout from './components/Layout.jsx';
 
 //Contact
@@ -28,7 +25,6 @@ import AddInventory from "./components/inventory/AddInventory";
 import EditInventory from "./components/inventory/EditInventory";
 import Signin from "./components/auth/Signin";
 import Signup from "./components/auth/Signup";
-import AddContacts from './components/contacts/AddContacts.jsx';
  
 
 function MainRouter(){
