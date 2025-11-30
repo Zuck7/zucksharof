@@ -22,8 +22,8 @@ const AddContacts = () => {
             id: contact.id,
             firstname: contact.firstname,
             lastname: contact.lastname,
-            phone: contact.phone,
             email: contact.email,
+            phone_number: contact.phone_number
         };
 
         create(submitContact)

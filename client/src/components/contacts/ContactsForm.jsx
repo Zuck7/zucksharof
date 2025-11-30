@@ -9,26 +9,26 @@ const ContactsForm = ({ contact = {}, handleChange, handleSubmit }) => {
             <input type="hidden" name="id" value={contact.id || ""} />
 
             <div className="form-group">
-                <label htmlFor="fNameTextField">First Name</label>
+                <label htmlFor="firstnameTextField">First Name</label>
                 <input
-                    id="fNameTextField"
-                    name="fName"
+                    id="firstnameTextField"
+                    name="firstname"
                     className="form-control"
                     placeholder="Enter your first name"
-                    value={contact.fName || ""}
+                    value={contact.firstname || ""}
                     onChange={handleChange}
                     required
                 />
             </div>
 
             <div className="form-group">
-                <label htmlFor="lNameTextField">Last Name</label>
+                <label htmlFor="lastnameTextField">Last Name</label>
                 <input
-                    id="lNameTextField"
-                    name="lName"
+                    id="lastnameTextField"
+                    name="lastname"
                     className="form-control"
                     placeholder="Enter your last name"
-                    value={contact.lName || ""}
+                    value={contact.lastname || ""}
                     onChange={handleChange}
                     required
                 />
@@ -47,13 +47,13 @@ const ContactsForm = ({ contact = {}, handleChange, handleSubmit }) => {
             </div>
 
             <div className="form-group">
-                <label htmlFor="pNumberTextField">Phone Number</label>
+                <label htmlFor="phone_numberTextField">Phone Number</label>
                 <input
-                    id="pNumberTextField"
-                    name="pNumber"
+                    id="phone_numberTextField"
+                    name="phone_number"
                     className="form-control"
                     placeholder="Enter your Phone Number"
-                    value={contact.pNumber || ""}
+                    value={contact.phone_number || ""}
                     onChange={handleChange}
                 />
             </div>
