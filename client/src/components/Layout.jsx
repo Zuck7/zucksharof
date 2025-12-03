@@ -1,13 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import zuck from '../assets/zuck.png';
 import { isAuthenticated, getUsername, clearJWT } from './auth/auth-helper';
 
 function Layout(){
 
-  // const location = useLocation();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const signoutClick = () => {
     clearJWT();
+    navigate('/');
+    window.location.reload();
   }
   return(
     <>
