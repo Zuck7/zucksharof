@@ -5,11 +5,15 @@ function Home(){
         <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
             {/* Hero Section */}
             <section className="max-w-4xl mx-auto text-center mb-20">
-                <img
-                  src={zuhriddin}
-                  alt="Personal photo"
-                  className="mx-auto mb-6 w-32 h-32 sm:w-60 sm:h-60 rounded-2xl border-4 border-white shadow-lg object-cover"
-                />
+                <div className="flex justify-center mb-6">
+                  <div className="w-32 h-32 sm:w-60 sm:h-60 rounded-2xl border-4 border-white shadow-lg hover:bg-purple-200 transition-all duration-300 cursor-pointer flex items-center justify-center p-2">
+                    <img
+                      src={zuhriddin}
+                      alt="Personal photo"
+                      className="w-full h-full rounded-xl object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
                 <h1 className="text-5xl font-bold text-gray-900 mb-6">Welcome to My Portfolio</h1>
                 <p className="text-lg text-gray-700 leading-relaxed">
                     Practical student of AI - Software Engineering Advanced Diploma, with experience in building full-stack projects, user-oriented design, 
