@@ -16,10 +16,6 @@ function Home(){
                 </div>
                 <h1 className="text-5xl font-bold text-gray-900 mb-6">Welcome to My Portfolio</h1>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                    Practical student of AI - Software Engineering Advanced Diploma, with experience in building full-stack projects, user-oriented design, 
-                    database management and object-oriented programming; Demonstrated analytical skills used for unit testing, debugging and troubleshooting; 
-                    Multilingual in English, Russian, German and Uzbek; worked as a marketing associate in a software company, where implemented strong 
-                    marketing and communication to attract 500+ active product users
                 </p>
             </section>
 
