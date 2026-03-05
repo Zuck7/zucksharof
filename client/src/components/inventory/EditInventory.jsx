@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import InventoryModel from "../../datasource/inventoryModel";
 import { update, read } from "../../datasource/api-inventory";
 import InventoryForm from "./InventoryForm";
 
 const EditInventory = () => {
     const navigate = useNavigate();
     const { id } = useParams();
-    const [product, setProduct] = useState(new InventoryModel());
+    const [product, setProduct] = useState({});
     const [errorMsg, setErrorMsg] = useState('')
 
     // When the component loads.
     useEffect(() => {
         read(id).then(data => {
             if (data) {
-                setProduct(new InventoryModel(
-                    data.id,
-                    data.item,
-                    data.qty,
-                    data.tags,
-                    data.status,
-                    data.size.h,
-                    data.size.w,
-                    data.size.uom
-                ));
+                setProduct({
+                    id: data.id,
+                    item: data.item,
+                    qty: data.qty,
+                    tags: data.tags,
+                    status: data.status,
+                    size_h: data.size.h,
+                    size_w: data.size.w,
+                    size_uom: data.size.uom
+                });
             } else {
                 setErrorMsg(data.message);
             }

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import InventoryModel from "../../datasource/inventoryModel";
 import { create } from "../../datasource/api-inventory";
 import InventoryForm from "./InventoryForm";
 
 const AddInventory = () => {
     const navigate = useNavigate();
-    const [product, setProduct] = useState(new InventoryModel());
+    const [product, setProduct] = useState({});
     const [errorMsg, setErrorMsg] = useState('')
 
     const handleChange = (event) => {
