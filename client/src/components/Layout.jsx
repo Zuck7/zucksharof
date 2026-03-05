@@ -15,6 +15,8 @@ function Layout(){
           <div className="flex items-center gap-8">
             <Link to="/" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Home</Link>
             <Link to="/about" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">About Me</Link>
+            <Link to="/projects" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Projects</Link>
+            <Link to="/experience" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Experience</Link>
             <Link to="/contact" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">Contact</Link>
             <Link to="/projects/list" className="text-gray-700 font-medium hover:text-indigo-600 transition-colors">
               <i className="fa-regular fa-rectangle-list"></i> Project List

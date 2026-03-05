@@ -4,6 +4,8 @@ import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
 import NotFound from './components/NotFound.jsx';
 import Layout from './components/Layout.jsx';
+import Projects from './components/projects.jsx';
+import Experience from './components/Experience.jsx';
 
 //Project
 import ListProject from "./components/projects/ListProjects.jsx";
@@ -23,6 +25,8 @@ function MainRouter(){
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/experience" element={<Experience />} />
                 <Route path="/contact" element={<Contact />} />
 
                 <Route path="/projects/list" element={<ListProject />} />
