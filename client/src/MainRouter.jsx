@@ -4,13 +4,13 @@ import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
 import NotFound from './components/NotFound.jsx';
 import Layout from './components/Layout.jsx';
-import Projects from './components/projects.jsx';
+import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
  
 
 function MainRouter(){
     return(
-        <div>
+        <div className="min-h-screen bg-slate-950">
             <Layout/>
             <Routes>
                 <Route path="/" element={<Home />} />

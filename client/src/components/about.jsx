@@ -1,44 +1,110 @@
-import ListComponent from "./ListComponent";
 import zuhriddin from '../assets/zuhriddin.jpeg';
 import Resume from '../assets/zuhriddin_resume.pdf';
 
+function About() {
+  return (
+    <div className="page-bg relative overflow-hidden">
 
-const data = [
-    {
-        imagePath: zuhriddin,
-        title: 'About Me',
-        text: "Hi, my name is Zuhriddin (Zuck) Sharofiddinov. I'm from Tashkent, Uzbekistan, a country with rich history, which now raises intelligent youth. For the past 3 years, I have been doing marketing for international companies. The most valuable experience was with Infinix Mobility (gadget production), where I gained international experience. But I chose to change my career path and break into tech. I thought software engineering would be the best choice, as it includes closely collaborating with the business and take part in its decision in terms of its software. This is what I had led myself after my marketing experience, which is to work with front team. I have been in software engineering for one year and so far, I have learnt Web Development, Database Management and Systems Design. I assume these are three most valuable skills that I software engineer must have. You can check my portfolio and let me know of your any questions through my contacts."
-    }, ]
+      {/* Glow orbs */}
+      <div className="glow-orb w-80 h-80 bg-pink-500 top-20 -left-10" />
+      <div className="glow-orb w-72 h-72 bg-violet-600 bottom-40 right-0" />
 
-    function About() {
-        return (
-            <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
-            <div className="max-w-6xl mx-auto">
-                <h1 className="text-5xl font-bold text-gray-900 text-center mb-16">About Me</h1>
-                <ListComponent items={data} />
-                
-                {/* Download Resume Button */}
-                <div className="text-center mt-12">
-                    <a 
-                        href={Resume} 
-                        download 
-                        className="inline-block bg-indigo-600 text-white font-semibold py-4 px-10 rounded-full hover:bg-indigo-700 transition duration-200 shadow-lg hover:shadow-xl"
-                    >
-                        Download Resume
-                    </a>
-                </div>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
 
-                {/* Contact Section */}
-                <section className="max-w-4xl mx-auto mt-20 text-center bg-white rounded-xl p-8 shadow-md">
-                <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-                <p className="text-gray-700 mb-8">Feel free to reach out to me for any opportunities or inquiries.</p>
-                <p className="text-gray-900 font-medium">Email: <a href="mailto:zukhriddinsh@gmail.com" className="text-indigo-600 hover:underline">zukhriddinsh@gmail.com</a></p>
-                <p className="text-gray-900 font-medium">Phone: <a href="tel:+14372142297" className="text-indigo-600 hover:underline">+1(437) 214-2297</a></p>
-                <p className="text-gray-900 font-medium">LinkedIn: <a href="https://www.linkedin.com/in/zuhriddinsh/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Zuhriddin Sharofiddinov</a></p>
-            </section>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-extrabold text-white mb-4">
+            About <span className="gradient-text">Me</span>
+          </h1>
+        </div>
+
+        {/* Main card */}
+        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden mb-8">
+          <div className="flex flex-col md:flex-row">
+            {/* Image */}
+            <div className="md:w-64 flex-shrink-0">
+              <img
+                src={zuhriddin}
+                alt="Zuhriddin Sharofiddinov"
+                className="w-full h-64 md:h-full object-cover opacity-90"
+              />
             </div>
+            {/* Bio */}
+            <div className="flex-1 p-8">
+              <h2 className="text-2xl font-bold text-white mb-1">Zuhriddin (Zuck) Sharofiddinov</h2>
+              <p className="text-violet-400 font-medium mb-5">Software Engineer & AI Developer · Toronto, ON</p>
+
+              <div className="space-y-4 text-slate-200 text-sm leading-relaxed">
+                <p>
+                  Originally from Tashkent, Uzbekistan — a country with rich history and an increasingly tech-forward generation —
+                  I spent 3 years in marketing for international companies, including <span className="text-white font-semibold">Infinix Mobility</span>, where I gained valuable international experience.
+                </p>
+                <p>
+                  I made a deliberate pivot into software engineering because it sits at the intersection of business and technology —
+                  allowing me to collaborate directly with product teams and shape decisions through code. The marketing background
+                  gives me a unique lens: I build systems with the end user and business impact always in mind.
+                </p>
+                <p>
+                  In just over a year in software engineering, I've developed skills across <span className="text-white font-semibold">Web Development</span>,{' '}
+                  <span className="text-white font-semibold">Database Management</span>, <span className="text-white font-semibold">Systems Design</span>, and{' '}
+                  <span className="text-white font-semibold">AI/ML Engineering</span>. Currently I'm building Multi-Agent systems at{' '}
+                  <span className="text-white font-semibold">KPMG</span> and studying Software Engineering & AI at{' '}
+                  <span className="text-white font-semibold">Centennial College</span>.
+                </p>
+              </div>
             </div>
-        );
-    }
+          </div>
+        </div>
+
+        {/* Highlights grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          {[
+            { label: 'Background', value: 'Marketing → Software Engineering', color: 'violet' },
+            { label: 'Origin', value: 'Tashkent, Uzbekistan', color: 'cyan' },
+            { label: 'Current Focus', value: 'Agentic AI & Full-Stack', color: 'pink' },
+          ].map((item, i) => {
+            const colorMap = {
+              violet: 'border-violet-500/30 text-violet-400',
+              cyan: 'border-cyan-500/30 text-cyan-400',
+              pink: 'border-pink-500/30 text-pink-400',
+            };
+            return (
+              <div key={i} className={`bg-slate-900/60 border ${colorMap[item.color].split(' ')[0]} rounded-2xl p-5`}>
+                <p className="text-slate-300 text-xs uppercase tracking-wider font-semibold mb-1">{item.label}</p>
+                <p className={`font-bold ${colorMap[item.color].split(' ')[1]} text-sm`}>{item.value}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* CTA */}
+        <div className="flex flex-wrap gap-4 justify-center">
+          <a
+            href={Resume}
+            download
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+          >
+            Download Resume
+          </a>
+          <a
+            href="mailto:zukhriddinsh@gmail.com"
+            className="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="https://www.linkedin.com/in/zuhriddinsh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-xl border border-blue-500/30 text-blue-300 font-semibold hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 hover:-translate-y-0.5"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
 export default About;

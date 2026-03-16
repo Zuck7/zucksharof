@@ -1,56 +1,212 @@
+import { Link } from 'react-router-dom';
+
+const experiences = [
+  {
+    title: 'Software Consultant Intern',
+    company: 'KPMG',
+    location: 'Toronto, ON',
+    duration: 'January 2026 – Present',
+    current: true,
+    color: 'emerald',
+    highlights: [
+      { label: 'Productivity Boost', value: '+40%' },
+      { label: 'System Type', value: 'Multi-Agent' },
+    ],
+    points: [
+      'Developing a Multi-Agent System focused on Bid Pursuits that resolves miscommunication within the team and allows co-workers to verify information with agents to overcome deal losses',
+      'Utilizing Agentic AI in the workflow, increasing productivity by 40%, resulting in successful deal closures with clients and pursuit of new opportunities',
+      'Contributing to the development of a pricing internal software tool that allows consultants to evaluate deal profits and submit them for review to executive members',
+    ],
+    tags: ['Multi-Agent Systems', 'Agentic AI', 'LangChain', 'Python', 'Consulting'],
+  },
+];
+
+const education = [
+  {
+    degree: 'Ontario Advanced Diploma',
+    field: 'Software Engineering & AI (Co-op)',
+    school: 'Centennial College',
+    location: 'Toronto, ON',
+    duration: 'Fall 2024 – Summer 2027',
+    status: 'In Progress',
+    courses: ['Java Programming', 'AI Systems Design', 'Web Development', 'Database Concepts (SQL)', 'C# Programming', 'Software Requirements'],
+  },
+];
+
+const colorConfig = {
+  emerald: {
+    border: 'border-emerald-500/30',
+    dot: 'bg-emerald-400',
+    badge: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-300',
+    title: 'text-emerald-400',
+    highlight: 'bg-emerald-500/10 border-emerald-500/20',
+    highlightText: 'text-emerald-300',
+    tag: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
+  },
+};
+
 function Experience() {
-    const experienceData = [
-        {
-            title: 'Software Consultant Intern',
-            company: 'KPMG, Toronto, ON',
-            duration: 'January 2026 - Present',
-            description: [
-                'Developing a Multi-Agent System that focuses on Bid Pursuits to resolve the problem of miscommunication within the team and allow co-workers to verify information with those agents to overcome deal losses',
-                'Utilizing Agentic AI in the workflow and increasing productivity by 40%, resulting in successful deal closures with clients and chasing new opportunities',
-                'Contributing to the development of a pricing internal software tool that allows consultants to evaluate profits from deals and submit them for review to executive members'
-            ]
-        },
-    ];
+  return (
+    <div className="page-bg relative overflow-hidden">
 
-    return (
-        <div className="py-12 bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-5xl font-bold text-gray-900 text-center mb-4">Professional Experience</h1>
-                <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-16">
-                    A summary of my professional journey and the value I've brought to each role.
-                </p>
+      {/* Glow orbs */}
+      <div className="glow-orb w-80 h-80 bg-emerald-500 top-20 right-0" />
+      <div className="glow-orb w-72 h-72 bg-violet-600 bottom-40 -left-10" />
 
-                <div className="space-y-8">
-                    {experienceData.map((exp, index) => (
-                        <div key={index} className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300">
-                            <div className="flex justify-between items-start mb-2">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-indigo-600">{exp.title}</h3>
-                                    <p className="text-lg text-gray-700 font-semibold">{exp.company}</p>
-                                </div>
-                                <span className="text-gray-500 text-sm font-medium whitespace-nowrap ml-4">{exp.duration}</span>
-                            </div>
-                            <ul className="list-disc list-inside space-y-2 text-gray-700 mt-4">
-                                {exp.description.map((point, idx) => (
-                                    <li key={idx}>{point}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
 
-                {/* Timeline Section */}
-                <div className="mt-16 text-center">
-                    <p className="text-gray-600 text-lg">
-                        Interested in learning more about my background? 
-                        <a href="/about" className="text-indigo-600 hover:underline font-semibold ml-1">
-                            View my full profile
-                        </a>
-                    </p>
-                </div>
-            </div>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-extrabold text-white mb-4">
+            Professional <span className="gradient-text">Experience</span>
+          </h1>
+          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+            My professional journey, the impact I've created, and the technologies I've worked with.
+          </p>
         </div>
-    );
+
+        {/* Work Experience */}
+        <div className="mb-16">
+          <h2 className="text-xl font-semibold text-white uppercase tracking-widest mb-8 flex items-center gap-3">
+            <span className="w-8 h-px bg-slate-600" />
+            Work Experience
+            <span className="flex-1 h-px bg-slate-700" />
+          </h2>
+
+          <div className="space-y-6">
+            {experiences.map((exp, index) => {
+              const c = colorConfig[exp.color] || colorConfig.emerald;
+              return (
+                <div
+                  key={index}
+                  className={`bg-slate-900/60 border ${c.border} rounded-2xl p-8 hover:bg-slate-900/80 transition-all duration-300`}
+                >
+                  {/* Header row */}
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                    <div>
+                      {exp.current && (
+                        <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border ${c.badge} text-xs font-medium mb-3`}>
+                          <span className={`w-1.5 h-1.5 rounded-full ${c.dot} animate-pulse`} />
+                          Current Role
+                        </div>
+                      )}
+                      <h3 className={`text-white font-bold ${c.title} mb-1`}>{exp.title}</h3>
+                      <p className="text-white font-semibold">{exp.company}</p>
+                      <p className="text-slate-200 text-sm">{exp.location}</p>
+                    </div>
+                    <div className="text-right flex-shrink-0">
+                      <p className="text-slate-300 text-sm font-medium">{exp.duration}</p>
+                    </div>
+                  </div>
+
+                  {/* Impact highlights */}
+                  {exp.highlights && (
+                    <div className="flex flex-wrap gap-3 mb-5">
+                      {exp.highlights.map((h, i) => (
+                        <div
+                          key={i}
+                          className={`flex items-center gap-3 px-4 py-2.5 rounded-xl border ${c.highlight}`}
+                        >
+                          <p className={`text-xl font-extrabold ${c.highlightText}`}>{h.value}</p>
+                          <p className="text-slate-300 text-xs leading-tight">{h.label}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Bullet points */}
+                  <ul className="space-y-3 mb-6">
+                    {exp.points.map((point, i) => (
+                      <li key={i} className="flex items-start gap-3 text-white text-sm leading-relaxed">
+                        <span className={`mt-1.5 w-1.5 h-1.5 rounded-full ${c.dot} flex-shrink-0`} />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Tech tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {exp.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className={`px-3 py-1 rounded-lg border text-xs font-medium ${c.tag}`}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="mb-16">
+          <h2 className="text-xl font-semibold text-white uppercase tracking-widest mb-8 flex items-center gap-3">
+            <span className="w-8 h-px bg-slate-600" />
+            Education
+            <span className="flex-1 h-px bg-slate-700" />
+          </h2>
+
+          {education.map((edu, i) => (
+            <div
+              key={i}
+              className="bg-slate-900/60 border border-violet-500/20 rounded-2xl p-8 hover:bg-slate-900/80 transition-all duration-300"
+            >
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-xs font-medium mb-3">
+                    {edu.status}
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-1">{edu.degree}</h3>
+                  <p className="text-violet-400 font-semibold mb-1">{edu.field}</p>
+                  <p className="text-slate-200 text-sm">{edu.school} · {edu.location}</p>
+                </div>
+                <p className="text-slate-300 text-sm font-medium flex-shrink-0">{edu.duration}</p>
+              </div>
+
+              <div>
+                <p className="text-slate-300 text-xs uppercase tracking-wider mb-3 font-semibold">Relevant Coursework</p>
+                <div className="flex flex-wrap gap-2">
+                  {edu.courses.map((course, j) => (
+                    <span
+                      key={j}
+                      className="px-3 py-1 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-xs"
+                    >
+                      {course}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer CTA */}
+        <div className="text-center bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+          <p className="text-slate-300 mb-4">Want to see my full work and projects?</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/projects"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+            >
+              View Projects
+            </Link>
+            <a
+              href="https://www.linkedin.com/in/zuhriddinsh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 transition-all duration-300"
+            >
+              LinkedIn Profile ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }
 
 export default Experience;
