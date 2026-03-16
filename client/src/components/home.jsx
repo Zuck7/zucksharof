@@ -92,11 +92,8 @@ function Home() {
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               Available for opportunities
             </div>
-
             <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-tight mb-3">
-              Zuhriddin
-              <br />
-              <span className="gradient-text">(Zuck) Sharofiddinov</span>
+              <span className="gradient-text">Zuhriddin (Zuck) Sharofiddinov</span>
             </h1>
 
             <p className="text-xl text-slate-200 font-medium mb-6">

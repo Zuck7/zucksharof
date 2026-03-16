@@ -14,7 +14,7 @@ function About() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-white mb-4">
-            About <span className="gradient-text">Me</span>
+            <span className="gradient-text">About Me</span>
           </h1>
         </div>
 
