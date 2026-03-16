@@ -4,8 +4,8 @@ import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
 import Layout from './components/Layout.jsx';
 import Projects from './components/projects.jsx';
-import Experience from './components/experience.jsx';
-import NotFound from './components/notFound.jsx';
+import Experience from './components/Experience.jsx';
+import NotFound from './components/NotFound.jsx';
  
 
 function MainRouter(){
