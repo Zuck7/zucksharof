@@ -1,33 +1,13 @@
 function Experience() {
     const experienceData = [
         {
-            title: 'Job Title 1',
-            company: 'Company Name, Location',
-            duration: 'Month Year - Present',
+            title: 'Software Consultant Intern',
+            company: 'KPMG, Toronto, ON',
+            duration: 'January 2026 - Present',
             description: [
-                'Key achievement or responsibility 1',
-                'Key achievement or responsibility 2',
-                'Key achievement or responsibility 3'
-            ]
-        },
-        {
-            title: 'Job Title 2',
-            company: 'Company Name, Location',
-            duration: 'Month Year - Month Year',
-            description: [
-                'Key achievement or responsibility 1',
-                'Key achievement or responsibility 2',
-                'Key achievement or responsibility 3'
-            ]
-        },
-        {
-            title: 'Job Title 3',
-            company: 'Company Name, Location',
-            duration: 'Month Year - Month Year',
-            description: [
-                'Key achievement or responsibility 1',
-                'Key achievement or responsibility 2',
-                'Key achievement or responsibility 3'
+                'Developing a Multi-Agent System that focuses on Bid Pursuits to resolve the problem of miscommunication within the team and allow co-workers to verify information with those agents to overcome deal losses',
+                'Utilizing Agentic AI in the workflow and increasing productivity by 40%, resulting in successful deal closures with clients and chasing new opportunities',
+                'Contributing to the development of a pricing internal software tool that allows consultants to evaluate profits from deals and submit them for review to executive members'
             ]
         },
     ];

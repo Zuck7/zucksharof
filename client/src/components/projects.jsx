@@ -1,49 +1,41 @@
-import pokedex from '../assets/pokedex.jpeg';
 import mobistore from '../assets/mobistore.jpeg';
 import uberEats from '../assets/uberEats.jpeg'
 import cosmetics from '../assets/cosmetics.jpeg'
 
 const data = [
     {
-        imagePath: pokedex,
-        title: 'Pokedex Project',
-        text: "Pokedex Application - an application where users can search for Pokemon by name or ID, view their details in a styled card, open a modal to view more information, and add up to 6 Pokemon to a favourites list stored in localStorage. It uses PokeAPI to fetch Pokemon data.",
-        techStack: ['React', 'JavaScript', 'PokeAPI'],
-        githubUrl: 'https://github.com/Zuck7/pokedex-project'
-    }, 
-    {
-        imagePath: mobistore,
-        title: 'Mobile Store Database',
-        text: "Mobile Store Database This repository contains SQL scripts for creating and populating a relational database designed to manage data for a mobile store. The database includes tables for products, customers, stores, staff, sales orders, and order items.",
-        techStack: ['Oracle SQL'],
-        githubUrl: ''
-    },
-    {
-        imagePath: uberEats,
-        title: 'UberEats SRS Document',
-        text: "The objective of UberEATS is to create a platform to bring together 3 groups of people by acting as an intermediary between customers, restaurants, and drivers. The goal of the app is to provide a simple food delivery service, an efficient no-cost method of order taking, and an additional opportunity for Uber drivers.",
-        techStack: ['Systems Design', 'Requirements Analysis', 'SRS'],
-        githubUrl: ''
-    },
-    {
         imagePath: cosmetics,
         title: 'Cosmetics Multi-agent System',
-        text: "Developed a comprehensive multi-agent system design showcasing workflow with detailed diagrams. Built a system consisting of Planner (Orchestration), Reflection, Summarization, and Validation Agents integrated with a RAG system for open-source data on cosmetic and health products. Implemented Streamlit for a frontend chat interface to query the cosmetics knowledge base.",
-        techStack: ['Python', 'RAG', 'Streamlit'],
+        text: "Implemented Streamlit for a frontend chat interface for querying cosmetics knowledge base and leveraged llama-3.3 for inferencing using Groq. Developed a multi-agent system consisting of Planner (Orchestration), Reflection, Summarization, and Validation Agents integrated with a RAG system on open-source cosmetic and health product data. Built a systems design of the multi-agent system that showcases the system flow with diagrams that explicitly break down the workflow and how the Planner orchestrates the agentic system.",
+        techStack: ['Python', 'RAG', 'Streamlit', 'Groq', 'Systems Design'],
         githubUrl: 'https://github.com/Zuck7/Cosmetics-AI-Agent'
     },
     {
         imagePath: '',
-        title: 'Banking System Simulator',
-        text: "Developed event handlers and created 3 types of accounts with full functionality for purchase and payment processing. Implemented interest rate calculations and transaction management. Managed a team of 4 peers and assisted in decoupling the application architecture to enable easy implementation of future features.",
-        techStack: ['C#', '.NET', ],
+        title: 'YouTube Comments Spam Detector',
+        text: "Built a comments spam detector using scikit-learn, NLTK, and NumPy that classifies spam or ham comments using Multinomial Naïve Bayes Classifier, Bag of Words for feature extraction, and TF-IDF for feature weighting. Ran the model and achieved a test accuracy of 87%, effectively capturing spam indicators.",
+        techStack: ['Python', 'NLTK', 'NumPy', 'Scikit-learn', 'Machine Learning'],
         githubUrl: ''
     },
     {
         imagePath: '',
-        title: 'YouTube Comments Spam Detector',
-        text: "Built an intelligent spam detector using Logistic Regression, TF-IDF, and NumPy that classifies spam and ham comments with 87% accuracy. Utilized Multinomial Naive Bayes Classifier and Bag of Words for feature extraction. Effectively captured spam indicators and improved content moderation.",
-        techStack: ['Python', 'Machine Learning', 'NLP', 'Scikit-learn', 'NumPy'],
+        title: 'Banking System Simulator',
+        text: "Developed event handlers and created 3 types of accounts with full functionality for purchase, payment processing, interest rate calculations, and transaction fees. Managed a team of 4 peers and assisted in decoupling the application architecture to make it easy to implement future features.",
+        techStack: ['C#', '.NET'],
+        githubUrl: ''
+    },
+    {
+        imagePath: mobistore,
+        title: 'Rezolved – IT Support Ticket Management System',
+        text: "Programmed the frontend and backend using the MERN stack and Bootstrap for styling. Inspected the entire ticket submission flow and debugged CRUD operations using MongoDB to verify data integrity. Shipped the application utilizing CI/CD pipelines over 3 months and ran Unit Testing on tickets. Implemented Firebase signup for users to login using Google account with Admin/User roles.",
+        techStack: ['MERN', 'Bootstrap', 'Firebase', 'MongoDB', 'CI/CD'],
+        githubUrl: ''
+    },
+    {
+        imagePath: uberEats,
+        title: 'Software Requirements Specification – Uber Eats Mobile App',
+        text: "Coordinated a team of 4 members on the project and delegated tasks on building the SRS document. Built a Sequence diagram, Use Case diagram, Activity Swim Lane Diagram, and constructed other software requirements including use cases and functional/nonfunctional requirements. Programmed classes in Python to provide a general understanding of the simplified domain model of the application.",
+        techStack: ['Systems Design', 'Requirements Analysis', 'SRS', 'Python'],
         githubUrl: ''
     }
 ]
