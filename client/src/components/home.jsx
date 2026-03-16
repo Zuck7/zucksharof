@@ -24,22 +24,19 @@ function Home(){
                 <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Technical Skills</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Programming:</strong> JavaScript, C#, Oracle SQL, Java, HTML/CSS, Python</p>
+                        <p className="text-gray-800"><strong className="text-indigo-600">Programming Languages:</strong> Python, JavaScript, Java, Oracle SQL, C#, HTML/CSS</p>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Frameworks & Libraries:</strong> React (Vite), Express, Node, .Net, Pandas, Matplotlib, MongoDB</p>
+                        <p className="text-gray-800"><strong className="text-indigo-600">Libraries:</strong> Streamlit, Pandas, NumPy, Scikit-learn, NLTK, TensorFlow, PyTorch, Matplotlib</p>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Operating Systems:</strong> MacOS, Linux, Windows</p>
+                        <p className="text-gray-800"><strong className="text-indigo-600">Frameworks:</strong> LangChain, LangGraph, React, Node.js, Express, MERN, Tailwind CSS, Bootstrap</p>
                     </div>
                     <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Development Tools:</strong> GitHub, Visual Studio Code, Visual Studio, Eclipse, Anaconda Navigator</p>
+                        <p className="text-gray-800"><strong className="text-indigo-600">Developer Tools:</strong> Anaconda Navigator, Git, Docker, Eclipse, VS Code, VS, IntelliJ, Firebase, Groq</p>
                     </div>
-                    <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Cloud Computing:</strong> AWS, Microsoft Azure</p>
-                    </div>
-                    <div className="bg-white rounded-xl p-6 shadow-md">
-                        <p className="text-gray-800"><strong className="text-indigo-600">Other Tools:</strong> Slack, Jira, Trello, MS Office, Figma, Google (Analytics, Trends, Ads)</p>
+                    <div className="bg-white rounded-xl p-6 shadow-md md:col-span-2">
+                        <p className="text-gray-800"><strong className="text-indigo-600">Other Skills:</strong> Systems Design, SDLC, CI/CD Pipelines</p>
                     </div>
                 </div>
             </section>
@@ -60,37 +57,13 @@ function Home(){
                 <div className="space-y-8">
                     {/* Experience 1 */}
                     <div className="bg-white rounded-xl p-8 shadow-md">
-                        <h3 className="text-xl font-bold text-indigo-600 mb-2">Marketing Associate</h3>
-                        <h4 className="text-lg text-gray-700 mb-1">Quartermaster Inc., Toronto, Canada</h4>
-                        <p className="text-gray-500 mb-4">April 2025 - Present</p>
+                        <h3 className="text-xl font-bold text-indigo-600 mb-2">Software Consultant Intern</h3>
+                        <h4 className="text-lg text-gray-700 mb-1">KPMG (Toronto, ON, Canada)</h4>
+                        <p className="text-gray-500 mb-4">January 2026 - Present</p>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Collaborated with the software team on product bugs and reported them on Slack for a resolution</li>
-                            <li>Contributed to the conversion of 15% of GTA (homeowner to product user), helped with account setups and assisted in leading the team of 11 members in achieving KPIs</li>
-                            <li>In 5 months, collected 400+ referrals from homeowners on home service professionals they used</li>
-                        </ul>
-                    </div>
-
-                    {/* Experience 2 */}
-                    <div className="bg-white rounded-xl p-8 shadow-md">
-                        <h3 className="text-xl font-bold text-indigo-600 mb-2">Junior BI Analyst</h3>
-                        <h4 className="text-lg text-gray-700 mb-1">KDB Bank, Tashkent, Uzbekistan</h4>
-                        <p className="text-gray-500 mb-4">September 2022 – October 2022</p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Assisted in developing dashboards and reports for business and regulatory needs</li>
-                            <li>Worked with Senior BI Analyst to translate business requirements into data models and visualizations</li>
-                            <li>Supported in automating manual reporting tasks using Excel, SQL and BI tools</li>
-                        </ul>
-                    </div>
-
-                    {/* Experience 3 */}
-                    <div className="bg-white rounded-xl p-8 shadow-md">
-                        <h3 className="text-xl font-bold text-indigo-600 mb-2">Country Marketing Manager</h3>
-                        <h4 className="text-lg text-gray-700 mb-1">Infinix Mobility (Production of Gadgets), Tashkent, Uzbekistan</h4>
-                        <p className="text-gray-500 mb-4">March 2024 – August 2024</p>
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Delegated tasks in the marketing department, supported the department with requesting additional information from headquarter in China and confirmed upcoming product launch campaigns</li>
-                            <li>Administered 2 social media platforms, analyzed the effectiveness of content, launched collaboration campaigns with retailers, communicated with 50k audience on Instagram page, and answered their questions</li>
-                            <li>Ran product presentation content with 30 bloggers and influencers, signed 2 ambassadors to represent products, organized overall 25 presentations for partners on new product launch campaigns, negotiated partners' questions, and provided further details for partnership</li>
+                            <li>Developing a Multi-Agent System that focuses on Bid Pursuits to resolve the problem of miscommunication within the team and allow co-workers to verify information with those agents to overcome deal losses</li>
+                            <li>Utilizing Agentic AI in the workflow and increasing productivity by 40%, resulting in successful deal closures with clients and chasing new opportunities</li>
+                            <li>Contributing to the development of a pricing internal software tool that allows consultants to evaluate profits from deals and submit them for review to executive members</li>
                         </ul>
                     </div>
                 </div>
