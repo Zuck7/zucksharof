@@ -153,7 +153,7 @@ function Projects() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-white mb-4">
-            My Projects
+            <span className="gradient-text">My Projects</span>
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto">
             A collection of projects spanning AI/ML systems, full-stack web apps, and software engineering

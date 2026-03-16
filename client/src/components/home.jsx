@@ -172,13 +172,13 @@ function Home() {
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-28">
           {[
             { value: '6+', label: 'Projects Built' },
-            { value: '40%', label: 'Productivity Gain at KPMG' },
-            { value: '87%', label: 'ML Model Accuracy' },
-            { value: '2027', label: 'Expected Graduation' },
+            { value: '40%', label: 'Productivity Gain building AI agent for Bid team at KPMG' },
           ].map((stat, i) => (
             <div
               key={i}
-              className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 text-center hover:border-violet-500/30 transition-colors duration-300"
+              className={`bg-slate-900/60 border border-slate-800 rounded-2xl p-6 text-center hover:border-violet-500/30 transition-colors duration-300 ${
+                i === 2 ? 'col-span-2 md:col-span-2 md:col-start-2' : ''
+              }`}
             >
               <p className="text-3xl font-extrabold gradient-text mb-1">{stat.value}</p>
               <p className="text-slate-300 text-sm">{stat.label}</p>

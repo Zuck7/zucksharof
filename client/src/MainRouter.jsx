@@ -2,10 +2,10 @@ import { Routes, Route } from 'react-router-dom';
 import About from './components/about.jsx';
 import Home from './components/home.jsx';
 import Contact from './components/contact.jsx';
-import NotFound from './components/NotFound.jsx';
-import Layout from './components/Layout.jsx';
-import Projects from './components/Projects.jsx';
-import Experience from './components/Experience.jsx';
+import NotFound from './components/notFound.jsx';
+import Layout from './components/layout.jsx';
+import Projects from './components/projects.jsx';
+import Experience from './components/experience.jsx';
  
 
 function MainRouter(){

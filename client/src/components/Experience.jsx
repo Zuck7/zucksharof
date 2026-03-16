@@ -58,7 +58,7 @@ function Experience() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-white mb-4">
-            Professional <span className="gradient-text">Experience</span>
+            <span className="gradient-text">Professional Experience</span>
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto">
             My professional journey, the impact I've created, and the technologies I've worked with.

@@ -66,7 +66,7 @@ function Contact() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-white mb-4">
-            Get in <span className="gradient-text">Touch</span>
+            <span className="gradient-text">Get in Touch</span>
           </h1>
           <p className="text-slate-300 text-lg max-w-xl mx-auto">
             I'm open to new opportunities, collaborations, and conversations. Don't hesitate to reach out.
