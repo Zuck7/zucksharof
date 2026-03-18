@@ -19,7 +19,7 @@ function Layout() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-9 h-9 rounded-xl overflow-hidden ring-2 ring-violet-500/30 group-hover:ring-violet-500/60 transition-all duration-300">
-            <img src={zuck} alt="logo" className="w-full h-full object-cover" />
+            <img src={zuck} alt="logo" className="w-full h-full" />
           </div>
           <span className="font-bold text-white text-base hidden sm:block tracking-wide">
             Zuck<span className="text-violet-400">.</span>
@@ -34,7 +34,7 @@ function Layout() {
               <Link
                 key={idx}
                 to={link.to}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+                className={`px-4 py-2 rounded-lg text-sm font-medium no-underline hover:no-underline transition-all duration-200
                   ${isActive
                     ? 'bg-violet-600/20 text-violet-300 border border-violet-500/30'
                     : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
