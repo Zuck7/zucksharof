@@ -18,8 +18,14 @@ function Layout() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-xl overflow-hidden ring-2 ring-violet-500/30 group-hover:ring-violet-500/60 transition-all duration-300">
-            <img src={zuck} alt="logo" className="w-full h-full" />
+          <div className="relative">
+            <div className="w-9 h-9 rounded-xl overflow-hidden ring-2 ring-violet-500/30 transition-transform duration-300 group-hover:scale-110 group-hover:ring-violet-500/60">
+              <img
+                src={zuck}
+                alt="logo"
+                className="w-full h-full transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(139,92,246,0.7)]"
+              />
+            </div>
           </div>
           <span className="font-bold text-white text-base hidden sm:block tracking-wide">
             Zuck<span className="text-violet-400">.</span>
