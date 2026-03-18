@@ -46,7 +46,7 @@ const projects = [
     text: 'Programmed the frontend and backend using the MERN stack and Bootstrap for styling. Inspected the entire ticket submission flow and debugged CRUD operations using MongoDB to verify data integrity. Shipped using CI/CD pipelines over 3 months, ran unit testing on tickets, and implemented Firebase signup with Google Auth and Admin/User roles.',
     techStack: ['MERN', 'Bootstrap', 'Firebase', 'MongoDB', 'CI/CD', 'Unit Testing'],
     githubUrl: '',
-    liveUrl: 'https://rezolved.vercel.app',
+    liveUrl: 'https://rezolved.onrender.com',
     featured: false,
     color: 'emerald',
     impact: '3-month CI/CD delivery',
