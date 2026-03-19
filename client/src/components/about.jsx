@@ -59,7 +59,6 @@ function About() {
         {/* Highlights grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
           {[
-            { label: 'Background', value: 'Marketing → Software Engineering', color: 'violet' },
             { label: 'Origin', value: 'Tashkent, Uzbekistan', color: 'cyan' },
             { label: 'Current Focus', value: 'Agentic AI & Full-Stack', color: 'pink' },
           ].map((item, i) => {
@@ -82,13 +81,13 @@ function About() {
           <a
             href={Resume}
             download
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             Download Resume
           </a>
           <a
             href="mailto:zukhriddinsh@gmail.com"
-            className="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
+            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             Get in Touch
           </a>
@@ -96,7 +95,7 @@ function About() {
             href="https://www.linkedin.com/in/zuhriddinsh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl border border-blue-500/30 text-blue-300 font-semibold hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 hover:-translate-y-0.5"
+            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             LinkedIn ↗
           </a>
