@@ -256,15 +256,7 @@ function Projects() {
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             <a
               href="mailto:zukhriddinsh@gmail.com"
-<<<<<<< HEAD
-<<<<<<< HEAD
               className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
-=======
-              className="px-6 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
->>>>>>> parent of b60d6c0 (Links styling changed)
-=======
-              className="px-6 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
->>>>>>> parent of b60d6c0 (Links styling changed)
             >
               zukhriddinsh@gmail.com
             </a>
@@ -272,15 +264,7 @@ function Projects() {
               href="https://www.linkedin.com/in/zuhriddinsh/"
               target="_blank"
               rel="noopener noreferrer"
-<<<<<<< HEAD
-<<<<<<< HEAD
               className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
-=======
-              className="px-6 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
->>>>>>> parent of b60d6c0 (Links styling changed)
-=======
-              className="px-6 py-3 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
->>>>>>> parent of b60d6c0 (Links styling changed)
             >
               LinkedIn ↗
             </a>

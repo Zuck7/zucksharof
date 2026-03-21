@@ -30,7 +30,7 @@ function Layout() {
             </div>
           </div>
           <span className="font-bold text-white text-base hidden sm:block tracking-wide">
-            Zuck<span className="text-violet-400">.</span>
+            <span className="text-violet-400"></span>
           </span>
         </Link>
 
