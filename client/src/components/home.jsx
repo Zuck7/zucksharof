@@ -85,13 +85,28 @@ function Home() {
 
         {/* ── Hero ── */}
         <section className="flex flex-col md:flex-row items-center gap-14 mb-28">
-
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            Available for opportunities
+          </div>
+          {/* Profile image */}
+            <div className="relative">
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500 to-cyan-500 blur-2xl opacity-20" />
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-3xl ring-2 ring-violet-500/30 overflow-hidden">
+                <img
+                  src={zuhriddin}
+                  alt="Zuhriddin Sharofiddinov"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Floating badge */}
+              <div className="absolute -bottom-4 -right-4 bg-slate-900 border border-slate-700 rounded-2xl px-4 py-3 shadow-xl">
+                <p className="text-xs text-slate-400 mb-0.5">Current Role</p>
+                <p className="text-sm font-bold text-white">@ KPMG</p>
+              </div>
+            </div>
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Available for opportunities
-            </div>
             <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-tight mb-3">
               <span className="gradient-text">Zuhriddin (Zuck) Sharofiddinov</span>
             </h1>
@@ -145,25 +160,6 @@ function Home() {
               >
                 Resume ↗
               </a>
-            </div>
-          </div>
-
-          {/* Profile image */}
-          <div className="flex-shrink-0">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500 to-cyan-500 blur-2xl opacity-20" />
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 rounded-3xl ring-2 ring-violet-500/30 overflow-hidden">
-                <img
-                  src={zuhriddin}
-                  alt="Zuhriddin Sharofiddinov"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-4 -right-4 bg-slate-900 border border-slate-700 rounded-2xl px-4 py-3 shadow-xl">
-                <p className="text-xs text-slate-400 mb-0.5">Current Role</p>
-                <p className="text-sm font-bold text-white">@ KPMG</p>
-              </div>
             </div>
           </div>
         </section>
