@@ -6,14 +6,14 @@ function About() {
     <div className="page-bg relative overflow-hidden">
 
       {/* Glow orbs */}
-      <div className="glow-orb w-80 h-80 bg-pink-500 top-20 -left-10" />
-      <div className="glow-orb w-72 h-72 bg-violet-600 bottom-40 right-0" />
+      <div className="glow-orb w-56 h-56 sm:w-80 sm:h-80 bg-pink-500 top-20 -left-10" />
+      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-violet-600 bottom-40 right-0" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold text-white mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
             <span className="gradient-text">About Me</span>
           </h1>
         </div>
@@ -30,8 +30,8 @@ function About() {
               />
             </div>
             {/* Bio */}
-            <div className="flex-1 p-8">
-              <h2 className="text-2xl font-bold text-white mb-1">Zuhriddin (Zuck) Sharofiddinov</h2>
+            <div className="flex-1 p-5 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">Zuhriddin (Zuck) Sharofiddinov</h2>
               <p className="text-violet-400 font-medium mb-5">Software Engineer & AI Developer · Toronto, ON</p>
 
               <div className="space-y-4 text-slate-200 text-sm leading-relaxed">
@@ -57,7 +57,7 @@ function About() {
         </div>
 
         {/* Highlights grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8">
           {[
             { label: 'Origin', value: 'Tashkent, Uzbekistan', color: 'cyan' },
             { label: 'Current Focus', value: 'Agentic AI & Full-Stack', color: 'pink' },
@@ -68,7 +68,7 @@ function About() {
               pink: 'border-pink-500/30 text-pink-400',
             };
             return (
-              <div key={i} className={`bg-slate-900/60 border ${colorMap[item.color].split(' ')[0]} rounded-2xl p-5`}>
+              <div key={i} className={`bg-slate-900/60 border ${colorMap[item.color].split(' ')[0]} rounded-2xl p-4 sm:p-5`}>
                 <p className="text-slate-300 text-xs uppercase tracking-wider font-semibold mb-1">{item.label}</p>
                 <p className={`font-bold ${colorMap[item.color].split(' ')[1]} text-sm`}>{item.value}</p>
               </div>
@@ -77,17 +77,17 @@ function About() {
         </div>
 
         {/* CTA */}
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
           <a
             href={Resume}
             download
-            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             Download Resume
           </a>
           <a
             href="mailto:zukhriddinsh@gmail.com"
-            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             Get in Touch
           </a>
@@ -95,7 +95,7 @@ function About() {
             href="https://www.linkedin.com/in/zuhriddinsh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
           >
             LinkedIn ↗
           </a>

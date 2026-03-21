@@ -50,36 +50,36 @@ function Experience() {
     <div className="page-bg relative overflow-hidden">
 
       {/* Glow orbs */}
-      <div className="glow-orb w-80 h-80 bg-emerald-500 top-20 right-0" />
-      <div className="glow-orb w-72 h-72 bg-violet-600 bottom-40 -left-10" />
+      <div className="glow-orb w-56 h-56 sm:w-80 sm:h-80 bg-emerald-500 top-20 right-0" />
+      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-violet-600 bottom-40 -left-10" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold text-white mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
             <span className="gradient-text">Professional Experience</span>
           </h1>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-sm sm:text-lg max-w-2xl mx-auto">
             My professional journey, the impact I've created, and the technologies I've worked with.
           </p>
         </div>
 
         {/* Work Experience */}
-        <div className="mb-16">
+        <div className="mb-12 sm:mb-16">
           <h2 className="text-xl font-semibold text-white uppercase tracking-widest mb-8 flex items-center gap-3">
             <span className="w-8 h-px bg-slate-600" />
             Work Experience
             <span className="flex-1 h-px bg-slate-700" />
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-5 sm:space-y-6">
             {experiences.map((exp, index) => {
               const c = colorConfig[exp.color] || colorConfig.emerald;
               return (
                 <div
                   key={index}
-                  className={`bg-slate-900/60 border ${c.border} rounded-2xl p-8 hover:bg-slate-900/80 transition-all duration-300`}
+                  className={`bg-slate-900/60 border ${c.border} rounded-2xl p-5 sm:p-8 hover:bg-slate-900/80 transition-all duration-300`}
                 >
                   {/* Header row */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
@@ -90,7 +90,7 @@ function Experience() {
                           Current Role
                         </div>
                       )}
-                      <h3 className={`text-white font-bold ${c.title} mb-1`}>{exp.title}</h3>
+                      <h3 className={`text-lg sm:text-xl text-white font-bold ${c.title} mb-1`}>{exp.title}</h3>
                       <p className="text-white font-semibold">{exp.company}</p>
                       <p className="text-slate-200 text-sm">{exp.location}</p>
                     </div>
@@ -142,7 +142,7 @@ function Experience() {
         </div>
 
         {/* Education */}
-        <div className="mb-16">
+        <div className="mb-12 sm:mb-16">
           <h2 className="text-xl font-semibold text-white uppercase tracking-widest mb-8 flex items-center gap-3">
             <span className="w-8 h-px bg-slate-600" />
             Education
@@ -152,7 +152,7 @@ function Experience() {
           {education.map((edu, i) => (
             <div
               key={i}
-              className="bg-slate-900/60 border border-violet-500/20 rounded-2xl p-8 hover:bg-slate-900/80 transition-all duration-300"
+              className="bg-slate-900/60 border border-violet-500/20 rounded-2xl p-5 sm:p-8 hover:bg-slate-900/80 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                 <div>
@@ -184,12 +184,12 @@ function Experience() {
         </div>
 
         {/* Footer CTA */}
-        <div className="text-center bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+        <div className="text-center bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-8">
           <p className="text-slate-300 mb-4">Want to see my full work and projects?</p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             <Link
               to="/projects"
-              className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
             >
               View Projects
             </Link>
@@ -197,7 +197,7 @@ function Experience() {
               href="https://www.linkedin.com/in/zuhriddinsh/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
             >
               LinkedIn ↗
             </a>

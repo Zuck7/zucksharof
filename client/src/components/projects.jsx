@@ -145,23 +145,23 @@ function Projects() {
     <div className="page-bg relative overflow-hidden">
 
       {/* Glow orbs */}
-      <div className="glow-orb w-96 h-96 bg-violet-600 top-0 -right-20" />
-      <div className="glow-orb w-72 h-72 bg-cyan-500 bottom-40 -left-10" />
+      <div className="glow-orb w-56 h-56 sm:w-96 sm:h-96 bg-violet-600 top-0 -right-20" />
+      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-cyan-500 bottom-40 -left-10" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold text-white mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
             <span className="gradient-text">My Projects</span>
           </h1>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-sm sm:text-lg max-w-2xl mx-auto">
             A collection of projects spanning AI/ML systems, full-stack web apps, and software engineering
           </p>
         </div>
 
         {/* Projects */}
-        <div className="space-y-6 mb-20">
+        <div className="space-y-5 sm:space-y-6 mb-14 sm:mb-20">
           {projects.map((project, index) => {
             const c = colorMap[project.color];
             return (
@@ -170,7 +170,7 @@ function Projects() {
                 className={`bg-slate-900/60 border ${c.border} rounded-2xl overflow-hidden hover:bg-slate-900/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${c.glow} ${project.featured ? 'ring-1 ring-violet-500/30' : ''}`}
               >
                 {project.featured && (
-                  <div className="bg-gradient-to-r from-violet-600/20 to-cyan-600/20 border-b border-violet-500/20 px-6 py-2 flex items-center gap-2">
+                  <div className="bg-gradient-to-r from-violet-600/20 to-cyan-600/20 border-b border-violet-500/20 px-4 sm:px-6 py-2 flex items-center gap-2">
                     <span className="text-xs font-bold text-violet-300 tracking-widest uppercase">Featured Project</span>
                   </div>
                 )}
@@ -189,18 +189,18 @@ function Projects() {
                   )}
 
                   {/* Content */}
-                  <div className="flex-1 p-7">
+                  <div className="flex-1 p-4 sm:p-7">
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                       <div>
-                        <div className="flex items-center gap-3 mb-1">
-                          <h3 className={`text-white font-bold ${c.title}`}>{project.title}</h3>
+                        <div className="flex items-center gap-2.5 sm:gap-3 mb-1">
+                          <h3 className={`text-base sm:text-lg text-white font-bold ${c.title}`}>{project.title}</h3>
                           {project.impact && (
                             <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${c.impact}`}>
                               {project.impact}
                             </span>
                           )}
                         </div>
-                        <p className="text-slate-300 text-sm font-medium">{project.subtitle}</p>
+                        <p className="text-slate-300 text-xs sm:text-sm font-medium">{project.subtitle}</p>
                       </div>
 
                       {/* Links */}
@@ -210,7 +210,7 @@ function Projects() {
                             href={project.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 transition-all duration-200 text-sm font-medium"
+                            className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 transition-all duration-200 text-xs sm:text-sm font-medium"
                           >
                             <GitHubIcon className="w-4 h-4" />
                             GitHub
@@ -221,7 +221,7 @@ function Projects() {
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`flex items-center gap-2 px-4 py-2 rounded-lg border ${c.tag} transition-all duration-200 text-sm font-medium hover:opacity-80`}
+                            className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg border ${c.tag} transition-all duration-200 text-xs sm:text-sm font-medium hover:opacity-80`}
                           >
                             <ExternalIcon className="w-4 h-4" />
                             Live App
@@ -230,7 +230,7 @@ function Projects() {
                       </div>
                     </div>
 
-                    <p className="text-slate-300 text-sm leading-relaxed mb-5">{project.text}</p>
+                    <p className="text-slate-300 text-sm leading-relaxed mb-4 sm:mb-5">{project.text}</p>
 
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, idx) => (
@@ -250,13 +250,13 @@ function Projects() {
         </div>
 
         {/* Contact CTA */}
-        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-10 text-center">
-          <h2 className="text-3xl font-bold text-white mb-3">Have a project in mind?</h2>
+        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Have a project in mind?</h2>
           <p className="text-slate-300 mb-6">I'm always open to discussing new opportunities and ideas.</p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             <a
               href="mailto:zukhriddinsh@gmail.com"
-              className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
             >
               zukhriddinsh@gmail.com
             </a>
@@ -264,7 +264,7 @@ function Projects() {
               href="https://www.linkedin.com/in/zuhriddinsh/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
             >
               LinkedIn ↗
             </a>

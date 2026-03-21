@@ -58,30 +58,30 @@ function Contact() {
     <div className="page-bg relative overflow-hidden">
 
       {/* Glow orbs */}
-      <div className="glow-orb w-96 h-96 bg-violet-600 top-0 left-1/4" />
-      <div className="glow-orb w-72 h-72 bg-cyan-500 bottom-20 right-0" />
+      <div className="glow-orb w-56 h-56 sm:w-96 sm:h-96 bg-violet-600 top-0 left-1/4" />
+      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-cyan-500 bottom-20 right-0" />
 
-      <div className="relative z-10 max-w-3xl mx-auto px-6 py-24">
+      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold text-white mb-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
             <span className="gradient-text">Get in Touch</span>
           </h1>
-          <p className="text-slate-300 text-lg max-w-xl mx-auto">
+          <p className="text-slate-300 text-sm sm:text-lg max-w-xl mx-auto">
             I'm open to new opportunities, collaborations, and conversations. Don't hesitate to reach out.
           </p>
         </div>
 
         {/* Contact cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-10 sm:mb-12">
           {contacts.map((item, i) => (
             <a
               key={i}
               href={item.href}
               target={item.href.startsWith('http') ? '_blank' : undefined}
               rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className={`flex items-center gap-4 p-5 rounded-2xl border bg-slate-900/60 ${colorMap[item.color]} transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group`}
+              className={`flex items-center gap-3 p-4 sm:p-5 rounded-2xl border bg-slate-900/60 ${colorMap[item.color]} transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group`}
             >
               <div className="flex-shrink-0">
                 {item.icon}
@@ -95,19 +95,19 @@ function Contact() {
         </div>
 
         {/* Quick message prompt */}
-        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 text-center">
+        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-8 text-center">
           <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500/20 to-cyan-500/20 border border-violet-500/20 flex items-center justify-center mx-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-violet-400" viewBox="0 0 24 24" fill="currentColor">
               <path fillRule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clipRule="evenodd" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold text-white mb-2">Let's Connect</h2>
+          <h2 className="text-lg sm:text-xl font-bold text-white mb-2">Let's Connect</h2>
           <p className="text-slate-300 text-sm mb-6">
             Whether it's a full-time role, co-op opportunity, freelance project, or just a chat about AI and software — I'd love to hear from you.
           </p>
           <a
             href="mailto:zukhriddinsh@gmail.com"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+            className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
           >
             Send an Email
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
