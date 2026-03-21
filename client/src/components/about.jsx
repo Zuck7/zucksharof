@@ -83,7 +83,11 @@ function About() {
             href={Resume}
             download
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+=======
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+>>>>>>> parent of b60d6c0 (Links styling changed)
 =======
             className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
 >>>>>>> parent of b60d6c0 (Links styling changed)
@@ -93,7 +97,11 @@ function About() {
           <a
             href="mailto:zukhriddinsh@gmail.com"
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+=======
+            className="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
+>>>>>>> parent of b60d6c0 (Links styling changed)
 =======
             className="px-6 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-700 hover:border-slate-600 transition-all duration-300 hover:-translate-y-0.5"
 >>>>>>> parent of b60d6c0 (Links styling changed)
@@ -105,7 +113,11 @@ function About() {
             target="_blank"
             rel="noopener noreferrer"
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+=======
+            className="px-6 py-3 rounded-xl border border-blue-500/30 text-blue-300 font-semibold hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 hover:-translate-y-0.5"
+>>>>>>> parent of b60d6c0 (Links styling changed)
 =======
             className="px-6 py-3 rounded-xl border border-blue-500/30 text-blue-300 font-semibold hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 hover:-translate-y-0.5"
 >>>>>>> parent of b60d6c0 (Links styling changed)
