@@ -1,5 +1,5 @@
 import cosmetics from '../assets/cosmetics.jpeg';
-import mobistore from '../assets/mobistore.jpeg';
+import rezolved from '../assets/rezolved.png';
 import uberEats from '../assets/uberEats.jpeg';
 
 const GitHubIcon = ({ className }) => (
@@ -40,7 +40,7 @@ const projects = [
     impact: 'Multi-agent orchestration',
   },
   {
-    imagePath: mobistore,
+    imagePath: rezolved,
     title: 'Rezolved',
     subtitle: 'IT Support Ticket Management System',
     text: 'Programmed the frontend and backend using the MERN stack and Bootstrap for styling. Inspected the entire ticket submission flow and debugged CRUD operations using MongoDB to verify data integrity. Shipped using CI/CD pipelines over 3 months, ran unit testing on tickets, and implemented Firebase signup with Google Auth and Admin/User roles.',
