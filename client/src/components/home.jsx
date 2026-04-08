@@ -169,7 +169,7 @@ function Home() {
           {[
             { value: '6+', label: 'Projects Built' },
             { value: '40%', label: 'Productivity Gain building AI agent for Bid team at KPMG' },
-            { value: '2', label: 'years of software and marketing experience' }
+            { value: '2', label: 'Years of software and marketing experience' }
           ].map((stat, i) => (
             <div
               key={i}
