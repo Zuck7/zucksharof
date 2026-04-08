@@ -19,6 +19,25 @@ const experiences = [
     ],
     tags: ['Multi-Agent Systems', 'Agentic AI', 'LangChain', 'Python', 'Consulting'],
   },
+  {
+    title: 'Business Intelligence Intern',
+    company: 'KDB Bank Uzbekistan',
+    location: 'Tashkent, Uzbekistan · On-site',
+    duration: 'September 2022 – October 2022',
+    current: false,
+    color: 'blue',
+    highlights: [
+      { label: 'Reports Delivered', value: '16+' },
+      { label: 'Tables Queried', value: '20–30' },
+    ],
+    points: [
+      'Delivered 4 reports per week to KDB headquarters in Korea, covering branch-level transaction and banking activity',
+      'Queried and joined across 20–30 tables in SQL to extract and structure data for reporting',
+      'Built dashboards and reports in Power BI, translating raw banking data into clear visuals for executive review',
+      'Produced 16+ reports over the internship, maintaining consistent delivery on a weekly cadence',
+    ],
+    tags: ['SQL', 'Power BI', 'Data Analysis', 'Business Intelligence', 'Reporting'],
+  },
 ];
 
 const education = [
@@ -34,6 +53,15 @@ const education = [
 ];
 
 const colorConfig = {
+  blue: {
+    border: 'border-blue-500/30',
+    dot: 'bg-blue-400',
+    badge: 'bg-blue-500/10 border-blue-500/20 text-blue-300',
+    title: 'text-blue-400',
+    highlight: 'bg-blue-500/10 border-blue-500/20',
+    highlightText: 'text-blue-300',
+    tag: 'bg-blue-500/10 text-blue-300 border-blue-500/20',
+  },
   emerald: {
     border: 'border-emerald-500/30',
     dot: 'bg-emerald-400',
