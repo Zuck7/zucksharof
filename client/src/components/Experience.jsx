@@ -43,7 +43,7 @@ const experiences = [
 const education = [
   {
     degree: 'Ontario Advanced Diploma',
-    field: 'Software Engineering & AI (Co-op)',
+    field: 'Software Engineering & AI',
     school: 'Centennial College',
     location: 'Toronto, ON',
     duration: 'Fall 2024 – Summer 2027',

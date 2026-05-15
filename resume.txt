@@ -1,0 +1,38 @@
+Zuhriddin (Zuck) Sharofiddinov
+Toronto, ON | zukhriddinsh@gmail.com | 437-214-2297
+LinkedIn: linkedin.com/in/zuhriddinsh/ | Github: github.com/Zuck7
+Education                                                                                                    
+Centennial College                                                                                                                                         Toronto, ON
+Ontario Advanced Diploma (Software Engineering and AI)                                                     Fall 2024 - Summer 2027
+Technical Proficiency
+Languages: Python, JavaScript, Java, Oracle SQL, C#, HTML/CSS
+Libraries: Streamlit, Pandas, NumPy, Scikit-learn, NLTK, TensorFlow, PyTorch, Matplotlib
+Frameworks: LangChain, LangGraph, React, Node.js, Express, MERN, Tailwind CSS, Bootstrap
+Developer Tools: Anaconda Navigator, Git, Docker, Eclipse, VS Code, VS, IntelliJ, Firebase, Groq
+Work Experience
+KPMG                                                                                                                                                            Toronto, ON
+Software Consultant Intern                                                                                                         January 2026 - Present
+	•	Developing a Multi-Agent System that focuses on Bid Pursuits that resolve the problem of miscommunication within the team and allow co-workers to verify information with those agents to overcome deal losses
+	•	Utilizing Agentic AI in the workflow and increasing productivity by 40%, which is currently resulting in successful deal closures with clients and chasing new opportunities
+	•	Contributing to the development of a pricing internal software tool, which allows consultants to evaluate profits we make out of deals and submit them for a review to one of the executive members
+Projects 
+Cosmetics Multi-agent System – Python, RAG, Streamlit, Groq, Systems Design GitHub Link
+	•	Implemented Streamlit for frontend that exposes simple chat interface for querying cosmetics knowledge base and leveraged llama-3.3 for inferencing using Groq
+	•	Developed a multi-agent system that consists of Planner (Orchestration), Reflection, Summarization, Validation Agents and a RAG system that has open-source data on cosmetic and health products
+	•	Built a systems design of the multi-agent system that showcases the system flow and built diagrams that explicitly break down the worklflow and show how the Planner orchestrates the agentic system
+YouTube Comments Spam Detector – Python (NLTK, Numpy, Scikit-learn) GitHub Link
+	•	Built a comments spam detector using scikit-learn, NLTK and Numpy that classifies spam or ham comments using Multinomial Naïve Bayes Classifier, Bag of Words for feature extraction and TF-IDF for feature weighting
+	•	Ran the model and got the test accuracy of 87%, effectively capturing spam indicators
+Banking System Simulator – C# GitHub Link
+	•	Developed event handlers, created 3 types of accounts, where user has a functionality of purchase, payment and it also calculates interest rates and transaction fees
+	•	Managed the team of 4 peers, assisted on decoupling the application making it easy for future features
+Rezolved – IT Support Ticket Management System – MERN, Bootstrap, Firebase Rezolved Live App
+	•	Programmed the frontend and backend of the application using MERN stack and Bootstrap for styling
+	•	Inspected the entire ticket submission flow and debugged CRUD operations using MongoDB to check the data
+	•	Shipped the application utilizing CI/CD pipelines in span of 3 months and ran Unit Testing on tickets
+	•	Implemented Firebase signup option for users to login using Google account and Admin/User signup
+Software Requirements Specification Document – Uber Eats Mobile App
+	•	Coordinated the team of 4 members on the project and delegated tasks on building the document
+	•	Built a Sequence diagram, Use Case diagram, Activity Swim Lane Diagram and constructed other software requirements, including use cases, functional/nonfunctional requirements
+	•	Programmed the classes in Python to provide general understanding of the simplified domain model of the application
+

@@ -30,7 +30,7 @@ function Contact() {
         </svg>
       ),
       label: 'LinkedIn',
-      value: 'Zuhriddin Sharofiddinov',
+      value: 'linkedin.com/in/zuhriddinsh',
       href: 'https://www.linkedin.com/in/zuhriddinsh/',
       color: 'blue',
     },
