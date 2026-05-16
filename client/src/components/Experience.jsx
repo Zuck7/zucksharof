@@ -1,11 +1,23 @@
 import { Link } from 'react-router-dom';
 
 const experiences = [
+    {
+    title: 'Software Engineer Expert',
+    company: 'Mercor',
+    location: 'Remote',
+    duration: 'May 2026 – Present',
+    current: true,
+    color: 'emerald',
+    points: [
+      'Evaluated and ranked LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
+    ],
+    tags: ['Software Quality', 'LLM', 'Python', 'ML'],
+  },
   {
     title: 'Software Consultant Intern',
     company: 'KPMG',
     location: 'Toronto, ON',
-    duration: 'January 2026 – Present',
+    duration: 'January 2026 – April 2026',
     current: true,
     color: 'emerald',
     highlights: [
@@ -46,9 +58,9 @@ const education = [
     field: 'Software Engineering & AI',
     school: 'Centennial College',
     location: 'Toronto, ON',
-    duration: 'Fall 2024 – Summer 2027',
+    duration: 'Fall 2024 – Fall 2027',
     status: 'In Progress',
-    courses: ['Java Programming', 'AI Systems Design', 'Web Development', 'Database Concepts (SQL)', 'C# Programming', 'Software Requirements'],
+    courses: ['Supervised Learning', 'MLOps', 'Advanced Database Concepts', 'Networking & Intelligent Robotics', 'Java Programming', 'Systems Design', 'Web Application Development', 'Software Requirements'],
   },
 ];
 
