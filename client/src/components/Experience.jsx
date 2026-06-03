@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const experiences = [
-    {
+  {
     title: 'Software Engineer Expert',
     company: 'Mercor',
     location: 'Remote',
@@ -9,46 +9,47 @@ const experiences = [
     current: true,
     color: 'emerald',
     points: [
-      'Evaluated and ranked LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
+      'Evaluating and ranking LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
     ],
-    tags: ['Software Quality', 'LLM', 'Python', 'ML'],
+    tags: ['LLM Evaluation', 'Model Alignment', 'Reasoning', 'Coding', 'AI'],
   },
   {
     title: 'Software Consultant Intern',
     company: 'KPMG',
     location: 'Toronto, ON',
     duration: 'January 2026 – April 2026',
-    current: true,
-    color: 'emerald',
+    current: false,
+    color: 'blue',
     highlights: [
       { label: 'Productivity Boost', value: '+40%' },
       { label: 'System Type', value: 'Multi-Agent' },
     ],
     points: [
-      'Developing a Multi-Agent System focused on Bid Pursuits that resolves miscommunication within the team and allows co-workers to verify information with agents to overcome deal losses',
-      'Utilizing Agentic AI in the workflow, increasing productivity by 40%, resulting in successful deal closures with clients and pursuit of new opportunities',
-      'Contributing to the development of a pricing internal software tool that allows consultants to evaluate deal profits and submit them for review to executive members',
+      'Assisted in the testing and quality assurance processes to ensure that developed solutions meet client specifications and industry standards',
+      'Designed and developed a multi-agent system to resolve team miscommunications, enabling coworkers to verify information with agents and reduce deal losses',
+      'Leveraged agentic AI with Power Automate and n8n workflows, increasing productivity by 40% and driving successful deal closures and new opportunity generation',
+      'Introduced reports using PowerBI and Excel for internal workflow analysis and optimization of the processes',
+      'Contributed to development of an internal pricing tool, allowing consultants to evaluate deal profitability',
     ],
-    tags: ['Multi-Agent Systems', 'Agentic AI', 'LangChain', 'Python', 'Consulting'],
+    tags: ['Multi-Agent Systems', 'Agentic AI', 'LangChain', 'Python', 'n8n', 'Power Automate', 'PowerBI', 'Consulting'],
   },
   {
-    title: 'Business Intelligence Intern',
-    company: 'KDB Bank Uzbekistan',
-    location: 'Tashkent, Uzbekistan · On-site',
-    duration: 'September 2022 – October 2022',
+    title: 'Marketing Associate',
+    company: 'Quartermaster Inc.',
+    location: 'Toronto, ON',
+    duration: 'April 2025 – December 2025',
     current: false,
-    color: 'blue',
+    color: 'violet',
     highlights: [
-      { label: 'Reports Delivered', value: '16+' },
-      { label: 'Tables Queried', value: '20–30' },
+      { label: 'GTA Conversion', value: '15%' },
+      { label: 'Referrals Collected', value: '400+' },
     ],
     points: [
-      'Delivered 4 reports per week to KDB headquarters in Korea, covering branch-level transaction and banking activity',
-      'Queried and joined across 20–30 tables in SQL to extract and structure data for reporting',
-      'Built dashboards and reports in Power BI, translating raw banking data into clear visuals for executive review',
-      'Produced 16+ reports over the internship, maintaining consistent delivery on a weekly cadence',
+      'Collaborated with the software team on product bugs and reported them on Slack for a resolution',
+      'Contributed to the conversion of 15% of GTA (homeowner to product user), helped with account setups and assisted in leading the team of 11 members in achieving KPIs',
+      'In 5 months, collected 400+ referrals from homeowners on home service professionals they used',
     ],
-    tags: ['SQL', 'Power BI', 'Data Analysis', 'Business Intelligence', 'Reporting'],
+    tags: ['Marketing', 'Team Leadership', 'Customer Acquisition', 'Jira', 'Slack'],
   },
 ];
 
@@ -58,9 +59,9 @@ const education = [
     field: 'Software Engineering & AI',
     school: 'Centennial College',
     location: 'Toronto, ON',
-    duration: 'Fall 2024 – Fall 2027',
+    duration: 'Sept 2024 – December 2027',
     status: 'In Progress',
-    courses: ['Supervised Learning', 'MLOps', 'Advanced Database Concepts', 'Networking & Intelligent Robotics', 'Java Programming', 'Systems Design', 'Web Application Development', 'Software Requirements'],
+    courses: ['OOP', 'AI Systems Design', 'Supervised Learning', 'AI Soft Test & MLOps', 'DSA', 'Networking & Intelligent Robotics', 'Advanced Database Concepts', 'Linux', 'Web App Dev', 'SDLC'],
   },
 ];
 
@@ -82,6 +83,15 @@ const colorConfig = {
     highlight: 'bg-emerald-500/10 border-emerald-500/20',
     highlightText: 'text-emerald-300',
     tag: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20',
+  },
+  violet: {
+    border: 'border-violet-500/30',
+    dot: 'bg-violet-400',
+    badge: 'bg-violet-500/10 border-violet-500/20 text-violet-300',
+    title: 'text-violet-400',
+    highlight: 'bg-violet-500/10 border-violet-500/20',
+    highlightText: 'text-violet-300',
+    tag: 'bg-violet-500/10 text-violet-300 border-violet-500/20',
   },
 };
 

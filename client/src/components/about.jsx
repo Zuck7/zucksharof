@@ -47,8 +47,9 @@ function About() {
                 <p>
                   In just over a year in software engineering, I've developed skills across <span className="text-white font-semibold">Web Development</span>,{' '}
                   <span className="text-white font-semibold">Database Management</span>, <span className="text-white font-semibold">Systems Design</span>, and{' '}
-                  <span className="text-white font-semibold">AI/ML Engineering</span>. Currently I'm building Multi-Agent systems at{' '}
-                  <span className="text-white font-semibold">KPMG</span> and studying Software Engineering & AI at{' '}
+                  <span className="text-white font-semibold">AI/ML Engineering</span>. Previously built Multi-Agent systems at{' '}
+                  <span className="text-white font-semibold">KPMG</span>, currently working as a Software Engineer Expert at{' '}
+                  <span className="text-white font-semibold">Mercor</span>, and studying Software Engineering & AI at{' '}
                   <span className="text-white font-semibold">Centennial College</span>.
                 </p>
               </div>

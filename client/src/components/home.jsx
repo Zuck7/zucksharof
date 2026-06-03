@@ -5,31 +5,31 @@ const skills = [
   {
     category: 'Languages',
     icon: '{ }',
-    items: ['Python', 'JavaScript', 'Java', 'C#', 'Oracle SQL', 'HTML/CSS'],
+    items: ['Python', 'Java', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS', 'Linux Bash Script'],
     color: 'violet',
   },
   {
     category: 'AI & ML Libraries',
     icon: '⚡',
-    items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK', 'Pandas', 'NumPy', 'Matplotlib'],
+    items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK', 'Pandas', 'NumPy', 'Matplotlib', 'Streamlit'],
     color: 'cyan',
   },
   {
     category: 'Frameworks',
     icon: '◈',
-    items: ['LangChain', 'LangGraph', 'React', 'Node.js', 'Express', 'MERN', 'Tailwind CSS', 'Bootstrap'],
+    items: ['LangChain', 'LangGraph', 'React', 'Node.js', 'Express', 'MERN', 'Tailwind CSS', 'Bootstrap', 'PostgreSQL', 'RAG'],
     color: 'pink',
   },
   {
     category: 'Tools & Platforms',
     icon: '⚙',
-    items: ['Anaconda Navigator', 'Git', 'Docker', 'Eclipse', 'VS Code', 'Visual Studio', 'IntelliJ', 'Firebase', 'Groq'],
+    items: ['AWS', 'GitHub', 'Docker', 'Firebase', 'Vercel', 'Render', 'Github Actions', 'LucidChart'],
     color: 'emerald',
   },
   {
-    category: 'Other Skills',
+    category: 'Processes & Other Skills',
     icon: '◎',
-    items: ['Systems Design', 'SDLC', 'CI/CD Pipelines', 'Agentic AI', 'RAG'],
+    items: ['Agile', 'Systems Design', 'SDLC', 'Jira', 'DevOps', 'RestAPI', 'Power Platforms', 'VectorDBs'],
     color: 'amber',
   },
 ];
@@ -102,7 +102,7 @@ function Home() {
               {/* Floating badge */}
               <div className="absolute -bottom-3 -right-3 bg-slate-900 border border-slate-700 rounded-2xl px-3 py-2.5 shadow-xl">
                 <p className="text-xs text-slate-400 mb-0.5">Current Role</p>
-                <p className="text-sm font-bold text-white">@ KPMG</p>
+                <p className="text-sm font-bold text-white">@ Mercor</p>
               </div>
             </div>
           {/* Text */}
@@ -117,8 +117,9 @@ function Home() {
 
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8">
               Building intelligent systems at the intersection of AI and software engineering.
-              Currently developing Multi-Agent systems and Agentic AI workflows at{' '}
-              <span className="text-white font-semibold">KPMG</span> while completing my Advanced Diploma
+              Currently evaluating and improving LLM outputs at{' '}
+              <span className="text-white font-semibold">Mercor</span>, previously built Multi-Agent systems at{' '}
+              <span className="text-white font-semibold">KPMG</span>, while completing my Advanced Diploma
               in Software Engineering &amp; AI at{' '}
               <span className="text-white font-semibold">Centennial College</span>.
             </p>
@@ -243,7 +244,7 @@ function Home() {
                 </h3>
                 <p className="text-slate-200 font-medium mb-4">Centennial College · Toronto, ON</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Java Programming', 'AI Systems Design', 'Web Development', 'Database Concepts (SQL)', 'C# Programming', 'Software Requirements'].map((c, i) => (
+                  {['OOP', 'AI Systems Design', 'Supervised Learning', 'AI Soft Test & MLOps', 'DSA', 'Networking & Intelligent Robotics', 'Advanced Database Concepts', 'Linux', 'Web App Dev', 'SDLC'].map((c, i) => (
                     <span key={i} className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-lg text-slate-300 text-xs">
                       {c}
                     </span>
@@ -251,7 +252,7 @@ function Home() {
                 </div>
               </div>
               <div className="sm:text-right flex-shrink-0">
-                <p className="text-slate-300 text-sm font-medium">Fall 2024 – Summer 2027</p>
+                <p className="text-slate-300 text-sm font-medium">Sept 2024 – December 2027</p>
               </div>
             </div>
           </div>
@@ -270,17 +271,15 @@ function Home() {
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   Current
                 </div>
-                <h3 className="text-xl font-bold text-white mb-1">Software Consultant Intern</h3>
-                <p className="text-slate-200 font-medium">KPMG · Toronto, ON</p>
+                <h3 className="text-xl font-bold text-white mb-1">Software Engineer Expert</h3>
+                <p className="text-slate-200 font-medium">Mercor · Remote</p>
               </div>
-              <p className="text-slate-300 text-sm font-medium flex-shrink-0">Jan 2026 – Present</p>
+              <p className="text-slate-300 text-sm font-medium flex-shrink-0">May 2026 – Present</p>
             </div>
 
             <ul className="space-y-3">
               {[
-                'Developing a Multi-Agent System for Bid Pursuits that resolves team miscommunication and allows co-workers to verify information to overcome deal losses',
-                'Utilizing Agentic AI in the workflow — increasing productivity by 40%, resulting in successful deal closures and new opportunities',
-                'Contributing to a pricing internal software tool that allows consultants to evaluate deal profits and submit them for executive review',
+                'Evaluating and ranking LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
               ].map((point, i) => (
                 <li key={i} className="flex items-start gap-3 text-slate-300 text-sm leading-relaxed">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" />
