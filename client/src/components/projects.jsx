@@ -21,7 +21,7 @@ const projects = [
     subtitle: 'AI-Powered Product Copywriting Platform',
     text: 'Solving the problem of slow, expensive manual product copywriting — each listing can take 15–30 minutes to write and $5–$25 to outsource. Designed a multi-agent generation workflow for product analysis, SEO strategy, competitor research, and copywriting to produce marketplace-ready content in under 30 seconds per product.',
     techStack: ['TypeScript', 'React', 'Node.js', 'Python', 'FastAPI', 'Docker', 'MongoDB'],
-    githubUrl: 'https://shopdesc.ai',
+    githubUrl: 'https://github.com/Zuck7/shopdesc.ai',
     liveUrl: '',
     featured: true,
     color: 'violet',
