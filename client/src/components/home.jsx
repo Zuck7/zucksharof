@@ -99,11 +99,6 @@ function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-3 -right-3 bg-slate-900 border border-slate-700 rounded-2xl px-3 py-2.5 shadow-xl">
-                <p className="text-xs text-slate-400 mb-0.5">Current Role</p>
-                <p className="text-sm font-bold text-white">@ Mercor</p>
-              </div>
             </div>
           {/* Text */}
           <div className="max-w-3xl mx-auto">
