@@ -156,7 +156,7 @@ function Home() {
                 Get in Touch
               </Link>
               <a
-                href="/zuhriddin_resume.pdf"
+                href={zuhriddin_resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
