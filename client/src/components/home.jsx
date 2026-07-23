@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import zuhriddin from '../assets/zuhriddin.jpeg';
+import zuhriddin_resume from '../assets/zuhriddin_resume.pdf'
 
 const skills = [
   {
