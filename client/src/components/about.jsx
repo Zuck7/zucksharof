@@ -45,11 +45,11 @@ function About() {
                   gives me a unique lens: I build systems with the end user and business impact always in mind.
                 </p>
                 <p>
-                  In just over a year in software engineering, I've developed skills across <span className="text-white font-semibold">Web Development</span>,{' '}
+                  In two years in software engineering, I've developed skills across <span className="text-white font-semibold">Web Development</span>,{' '}
                   <span className="text-white font-semibold">Database Management</span>, <span className="text-white font-semibold">Systems Design</span>, and{' '}
-                  <span className="text-white font-semibold">AI/ML Engineering</span>. Previously built Multi-Agent systems at{' '}
-                  <span className="text-white font-semibold">KPMG</span>, currently working as a Software Engineer Expert at{' '}
-                  <span className="text-white font-semibold">Mercor</span>, and studying Software Engineering & AI at{' '}
+                  <span className="text-white font-semibold">AI/ML Engineering</span>. I built Python automation, Oracle SQL tooling, and Power BI reporting as a Software Consultant Intern at{' '}
+                  <span className="text-white font-semibold">KPMG</span>, evaluated and improved LLM outputs as an AI Training Contractor at{' '}
+                  <span className="text-white font-semibold">Mercor</span>, and I'm studying AI &amp; Software Engineering Technology at{' '}
                   <span className="text-white font-semibold">Centennial College</span>.
                 </p>
               </div>

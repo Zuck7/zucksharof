@@ -1,6 +1,5 @@
 import cosmetics from '../assets/cosmetics.jpeg';
 import rezolved from '../assets/rezolved.png';
-import uberEats from '../assets/uberEats.jpeg';
 
 const GitHubIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -17,10 +16,11 @@ const ExternalIcon = ({ className }) => (
 const projects = [
   {
     imagePath: null,
-    title: 'Shopdesc.ai',
+    title: 'Multi-Agent Product Copywriting',
     subtitle: 'AI-Powered Product Copywriting Platform',
-    text: 'Solving the problem of slow, expensive manual product copywriting — each listing can take 15–30 minutes to write and $5–$25 to outsource. Designed a multi-agent generation workflow for product analysis, SEO strategy, competitor research, and copywriting to produce marketplace-ready content in under 30 seconds per product.',
-    techStack: ['TypeScript', 'React', 'Node.js', 'Python', 'FastAPI', 'Docker', 'MongoDB'],
+    period: 'Jan 2026 – Present',
+    text: 'Solving the problem of slow, expensive manual product copywriting — each listing can take 15–30 minutes to write and $5–$25 to outsource. Designed a multi-agent Python backend workflow handling product analysis, SEO strategy, competitor research, and copywriting, producing marketplace-ready content in under 30 seconds. Containerized a scalable multi-service architecture with Docker Compose and automated builds, tests, and PR checks via a GitHub Actions CI/CD pipeline.',
+    techStack: ['Python', 'TypeScript', 'LangChain', 'Docker', 'Docker Compose', 'GitHub Actions', 'Git'],
     githubUrl: 'https://github.com/Zuck7/shopdesc.ai',
     liveUrl: '',
     featured: true,
@@ -28,16 +28,43 @@ const projects = [
     impact: 'Under 30 seconds per product',
   },
   {
+    imagePath: null,
+    title: 'Supply Chain Transparency & Audit Platform',
+    subtitle: 'Compliance Tracing Across Multi-Tier Supplier Networks',
+    period: 'Jan 2026 – Present',
+    text: 'Built a supply chain compliance platform that traces ethical and regulatory compliance across multi-tier supplier networks using a graph-based relational model with recursive SQL CTEs. Designed with Clean Architecture (Domain / Application / Infrastructure / API), JWT auth, and Redis caching, containerized via Docker/Kubernetes with CI/CD through GitHub Actions.',
+    techStack: ['C# .NET 8', 'React', 'SQL', 'Redis', 'Docker', 'Kubernetes', 'Clean Architecture', 'JWT'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    color: 'amber',
+    impact: 'Multi-tier supplier tracing',
+  },
+  {
     imagePath: cosmetics,
-    title: 'Cosmetics Multi-Agent System',
+    title: 'Cosmetics Multi-Agent RAG System',
     subtitle: 'RAG-Powered AI Assistant',
-    text: 'Implemented Streamlit for a frontend chat interface for querying a cosmetics knowledge base, leveraging llama-3.3 for inferencing via Groq. Developed a multi-agent system consisting of Planner (Orchestration), Reflection, Summarization, and Validation Agents integrated with a RAG system on open-source cosmetic and health product data. Built system-design diagrams to map workflow orchestration and clearly show how the Planner coordinates the agentic flow.',
-    techStack: ['Python', 'RAG', 'LangChain', 'LangGraph', 'Streamlit', 'Groq', 'Systems Design'],
+    period: 'Sep 2025 – Dec 2025',
+    text: 'Built a multi-agent backend system (Planner, Reflection, Summarization, Validation) backed by a retrieval pipeline over open-source health product data, with a Flask API serving a Streamlit chat UI. Used LLaMA 3.3 via Groq for inference and FAISS as the vector database for semantic retrieval.',
+    techStack: ['Python', 'LangChain', 'LangGraph', 'FAISS', 'Flask', 'Streamlit', 'Groq', 'RAG'],
     githubUrl: 'https://github.com/Zuck7/Cosmetics-AI-Agent',
     liveUrl: '',
     featured: false,
     color: 'pink',
     impact: 'Multi-agent orchestration',
+  },
+  {
+    imagePath: null,
+    title: 'YouTube Comments Spam Detector',
+    subtitle: 'ML Text Classification Model',
+    period: 'Sep 2025 – Oct 2025',
+    text: 'Built a spam/ham classifier in scikit-learn and NLTK using a Multinomial Naive Bayes model with Bag-of-Words features and TF-IDF weighting, reaching 87% test accuracy.',
+    techStack: ['Python', 'scikit-learn', 'NLTK', 'NumPy', 'Machine Learning', 'NLP'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    color: 'cyan',
+    impact: '87% test accuracy',
   },
   {
     imagePath: rezolved,
@@ -50,42 +77,6 @@ const projects = [
     featured: false,
     color: 'emerald',
     impact: '3-month CI/CD delivery',
-  },
-  {
-    imagePath: null,
-    title: 'YouTube Comments Spam Detector',
-    subtitle: 'ML Text Classification Model',
-    text: 'Built a comments spam detector using scikit-learn, NLTK, and NumPy that classifies spam or ham comments using a Multinomial Naïve Bayes Classifier. Used Bag of Words for feature extraction and TF-IDF for feature weighting. Achieved 87% test accuracy, effectively capturing spam indicators.',
-    techStack: ['Python', 'NLTK', 'NumPy', 'Scikit-learn', 'Machine Learning', 'NLP'],
-    githubUrl: '',
-    liveUrl: '',
-    featured: false,
-    color: 'cyan',
-    impact: '87% test accuracy',
-  },
-  {
-    imagePath: null,
-    title: 'Banking System Simulator',
-    subtitle: 'C# .NET Application',
-    text: 'Developed event handlers and created 3 types of accounts with full functionality for purchase, payment processing, interest rate calculations, and transaction fees. Managed a team of 4 peers and assisted in decoupling the application architecture to simplify future feature additions.',
-    techStack: ['C#', '.NET', 'OOP', 'Event Handling'],
-    githubUrl: '',
-    liveUrl: '',
-    featured: false,
-    color: 'amber',
-    impact: 'Team of 4',
-  },
-  {
-    imagePath: uberEats,
-    title: 'Software Requirements Specification Document',
-    subtitle: 'Uber Eats Mobile App',
-    text: "Coordinated a team of 4 on building a full SRS document for the Uber Eats mobile app. Built Sequence, Use Case, and Activity Swim Lane diagrams, and constructed functional/non-functional requirements and use cases. Programmed Python classes to demonstrate a simplified domain model of the application.",
-    techStack: ['Systems Design', 'Requirements Analysis', 'SRS', 'Python', 'UML'],
-    githubUrl: '',
-    liveUrl: '',
-    featured: false,
-    color: 'rose',
-    impact: 'Full SRS document',
   },
 ];
 
@@ -201,6 +192,9 @@ function Projects() {
                           )}
                         </div>
                         <p className="text-slate-300 text-xs sm:text-sm font-medium">{project.subtitle}</p>
+                        {project.period && (
+                          <p className="text-slate-400 text-xs mt-1">{project.period}</p>
+                        )}
                       </div>
 
                       {/* Links */}

@@ -1,38 +1,47 @@
 Zuhriddin (Zuck) Sharofiddinov
-Toronto, ON | zukhriddinsh@gmail.com | 437-214-2297
-LinkedIn: linkedin.com/in/zuhriddinsh/ | Github: github.com/Zuck7
-Education                                                                                                    
-Centennial College                                                                                                                                         Toronto, ON
-Ontario Advanced Diploma (Software Engineering and AI)                                                     Fall 2024 - Summer 2027
-Technical Proficiency
-Languages: Python, JavaScript, Java, Oracle SQL, C#, HTML/CSS
-Libraries: Streamlit, Pandas, NumPy, Scikit-learn, NLTK, TensorFlow, PyTorch, Matplotlib
-Frameworks: LangChain, LangGraph, React, Node.js, Express, MERN, Tailwind CSS, Bootstrap
-Developer Tools: Anaconda Navigator, Git, Docker, Eclipse, VS Code, VS, IntelliJ, Firebase, Groq
-Work Experience
-KPMG                                                                                                                                                            Toronto, ON
-Software Consultant Intern                                                                                                         January 2026 - Present
-	•	Developing a Multi-Agent System that focuses on Bid Pursuits that resolve the problem of miscommunication within the team and allow co-workers to verify information with those agents to overcome deal losses
-	•	Utilizing Agentic AI in the workflow and increasing productivity by 40%, which is currently resulting in successful deal closures with clients and chasing new opportunities
-	•	Contributing to the development of a pricing internal software tool, which allows consultants to evaluate profits we make out of deals and submit them for a review to one of the executive members
-Projects 
-Cosmetics Multi-agent System – Python, RAG, Streamlit, Groq, Systems Design GitHub Link
-	•	Implemented Streamlit for frontend that exposes simple chat interface for querying cosmetics knowledge base and leveraged llama-3.3 for inferencing using Groq
-	•	Developed a multi-agent system that consists of Planner (Orchestration), Reflection, Summarization, Validation Agents and a RAG system that has open-source data on cosmetic and health products
-	•	Built a systems design of the multi-agent system that showcases the system flow and built diagrams that explicitly break down the worklflow and show how the Planner orchestrates the agentic system
-YouTube Comments Spam Detector – Python (NLTK, Numpy, Scikit-learn) GitHub Link
-	•	Built a comments spam detector using scikit-learn, NLTK and Numpy that classifies spam or ham comments using Multinomial Naïve Bayes Classifier, Bag of Words for feature extraction and TF-IDF for feature weighting
-	•	Ran the model and got the test accuracy of 87%, effectively capturing spam indicators
-Banking System Simulator – C# GitHub Link
-	•	Developed event handlers, created 3 types of accounts, where user has a functionality of purchase, payment and it also calculates interest rates and transaction fees
-	•	Managed the team of 4 peers, assisted on decoupling the application making it easy for future features
-Rezolved – IT Support Ticket Management System – MERN, Bootstrap, Firebase Rezolved Live App
-	•	Programmed the frontend and backend of the application using MERN stack and Bootstrap for styling
-	•	Inspected the entire ticket submission flow and debugged CRUD operations using MongoDB to check the data
-	•	Shipped the application utilizing CI/CD pipelines in span of 3 months and ran Unit Testing on tickets
-	•	Implemented Firebase signup option for users to login using Google account and Admin/User signup
-Software Requirements Specification Document – Uber Eats Mobile App
-	•	Coordinated the team of 4 members on the project and delegated tasks on building the document
-	•	Built a Sequence diagram, Use Case diagram, Activity Swim Lane Diagram and constructed other software requirements, including use cases, functional/nonfunctional requirements
-	•	Programmed the classes in Python to provide general understanding of the simplified domain model of the application
+437-214-2297 | zukhriddinsh@gmail.com
+LinkedIn: linkedin.com/in/zuhriddinsh | GitHub: github.com/Zuck7 | zucksharof.onrender.com
 
+Education
+Centennial College                                                                    Toronto, ON
+Ontario Advanced Diploma in AI, Software Engineering Technology            Aug 2024 – Dec 2027
+
+Experience
+AI Training Contractor                                                        May 2026 – June 2026
+Mercor                                                              Remote (San Francisco, CA)
+  • Evaluated and ranked LLM outputs across coding and consulting tasks using structured rubrics, comparing model responses side by side and providing written rationale for each ranking to improve model alignment
+  • Identified hallucinations, factual inaccuracies, and safety issues in model-generated responses, documenting failure patterns and providing detailed feedback to support model improvement for leading AI labs
+
+Software Consultant Intern                                                     Jan 2026 – Apr 2026
+KPMG                                                                                  Toronto, ON
+  • Developed Python automation scripts using NumPy and scikit-learn, cutting recurring manual data processing from 10 hours to near-zero for 90+ consultants
+  • Built an RFP (Request for Proposal) document generator using Power Automate, automating the assembly of proposal documents from structured inputs and reducing manual drafting time for the advisory team
+  • Built and maintained Oracle SQL stored procedures for an internal pricing tool, enabling 30+ consultants to query and evaluate deal profitability directly from the database
+  • Created Power BI dashboards connected to SQL data sources covering 5 years of advisory deals to surface workflow trends and data insights for internal stakeholders
+
+Marketing Associate                                                            Apr 2025 – Dec 2025
+Quartermaster                                                                         Toronto, ON
+  • Collaborated with the software team to triage and report product bugs via Jira and Slack; supported a team of 11, helped drive a 15% homeowner-to-user conversion across the GTA
+
+Projects
+Multi-Agent Product Copywriting | Python, TypeScript, LangChain, Docker, Git      Jan 2026 – Present
+  • Designed a multi-agent Python backend workflow handling product analysis, SEO strategy, competitor research, and copywriting, producing marketplace-ready content in under 30 seconds
+  • Containerized a scalable multi-service architecture with Docker Compose and automated builds, tests, and PR checks via a GitHub Actions CI/CD pipeline
+
+Supply Chain Transparency & Audit Platform | C# .NET 8, React, SQL, Redis, Docker Jan 2026 – Present
+  • Built a supply chain compliance platform that traces ethical and regulatory compliance across multi-tier supplier networks using a graph-based relational model with recursive SQL CTEs
+  • Designed with Clean Architecture (Domain/Application/Infrastructure/API), JWT auth, Redis caching, and containerized via Docker/Kubernetes with CI/CD through GitHub Actions
+
+Cosmetics Multi-Agent RAG System | LangChain, LangGraph, FAISS, Streamlit          Sep 2025 – Dec 2025
+  • Built a multi-agent backend system (Planner, Reflection, Summarization, Validation) backed by a retrieval pipeline over open-source health product data, with Flask API serving and Streamlit chat UI
+  • Used LLaMA 3.3 via Groq for inference and FAISS as the vector database for semantic retrieval
+
+YouTube Comments Spam Detector | scikit-learn, NLTK, Python                        Sep 2025 – Oct 2025
+  • Built a spam/ham classifier in scikit-learn and NLTK using a Multinomial Naive Bayes model with Bag-of-Words features and TF-IDF weighting, reaching 87% test accuracy
+
+Technical Skills
+Languages: Java, Python, C#, JavaScript, TypeScript, C++, SQL, PL/SQL, NoSQL, HTML/CSS, Bash
+Frameworks: Node.js, Express, Flask, REST APIs, MERN, React, Next.js, Tailwind CSS, Bootstrap, Streamlit, Cypress
+Developer Tools: AWS, Azure, Docker, PostgreSQL, GitHub, Apache Airflow, Kubernetes, Redis, ROS2, Snowflake
+Practices: Agile, SDLC, CI/CD, DevOps, MLOps, Systems Design, Unit Testing
+AI & ML: RAG, MCP, scikit-learn, TensorFlow, PyTorch, NLTK, NumPy, LangChain, LangGraph, ChromaDB, FAISS

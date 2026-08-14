@@ -6,31 +6,31 @@ const skills = [
   {
     category: 'Languages',
     icon: '{ }',
-    items: ['Python', 'Java', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS', 'Linux Bash Script'],
+    items: ['Java', 'Python', 'C#', 'JavaScript', 'TypeScript', 'C++', 'SQL', 'PL/SQL', 'NoSQL', 'HTML/CSS', 'Bash'],
     color: 'violet',
   },
   {
-    category: 'AI & ML Libraries',
+    category: 'AI & ML',
     icon: '⚡',
-    items: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK', 'Pandas', 'NumPy', 'Matplotlib', 'Streamlit'],
+    items: ['RAG', 'MCP', 'LangChain', 'LangGraph', 'Scikit-learn', 'TensorFlow', 'PyTorch', 'NLTK', 'NumPy', 'ChromaDB', 'FAISS'],
     color: 'cyan',
   },
   {
     category: 'Frameworks',
     icon: '◈',
-    items: ['LangChain', 'LangGraph', 'React', 'Node.js', 'Express', 'MERN', 'Tailwind CSS', 'Bootstrap', 'PostgreSQL', 'RAG'],
+    items: ['Node.js', 'Express', 'Flask', 'REST APIs', 'MERN', 'React', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'Streamlit', 'Cypress'],
     color: 'pink',
   },
   {
-    category: 'Tools & Platforms',
+    category: 'Developer Tools',
     icon: '⚙',
-    items: ['AWS', 'GitHub', 'Docker', 'Firebase', 'Vercel', 'Render', 'Github Actions', 'LucidChart'],
+    items: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'PostgreSQL', 'Redis', 'GitHub', 'Apache Airflow', 'Snowflake', 'ROS2'],
     color: 'emerald',
   },
   {
-    category: 'Processes & Other Skills',
+    category: 'Practices',
     icon: '◎',
-    items: ['Agile', 'Systems Design', 'SDLC', 'Jira', 'DevOps', 'RestAPI', 'Power Platforms', 'VectorDBs'],
+    items: ['Agile', 'SDLC', 'CI/CD', 'DevOps', 'MLOps', 'Systems Design', 'Unit Testing'],
     color: 'amber',
   },
 ];
@@ -113,10 +113,11 @@ function Home() {
 
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl mx-auto mb-6 sm:mb-8">
               Building intelligent systems at the intersection of AI and software engineering.
-              Currently evaluating and improving LLM outputs at{' '}
-              <span className="text-white font-semibold">Mercor</span>, previously built Multi-Agent systems at{' '}
+              Most recently evaluated and improved LLM outputs as an AI Training Contractor at{' '}
+              <span className="text-white font-semibold">Mercor</span>, and built automation, SQL, and
+              reporting tooling as a Software Consultant Intern at{' '}
               <span className="text-white font-semibold">KPMG</span>, while completing my Advanced Diploma
-              in Software Engineering &amp; AI at{' '}
+              in AI &amp; Software Engineering Technology at{' '}
               <span className="text-white font-semibold">Centennial College</span>.
             </p>
 
@@ -170,8 +171,8 @@ function Home() {
         {/* ── Stats ── */}
         <section className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-16 sm:mb-28">
           {[
-            { value: '6+', label: 'Projects Built' },
-            { value: '40%', label: 'Productivity Gain building AI agent for Bid team at KPMG' },
+            { value: '5+', label: 'Projects Built' },
+            { value: '90+', label: 'Consultants freed from manual data processing by automation built at KPMG' },
             { value: '2', label: 'Years of software and marketing experience' }
           ].map((stat, i) => (
             <div
@@ -236,7 +237,7 @@ function Home() {
                   Advanced Diploma
                 </div>
                 <h3 className="text-xl font-bold text-white mb-1">
-                  Ontario Advanced Diploma — Software Engineering &amp; AI
+                  Ontario Advanced Diploma — AI, Software Engineering Technology
                 </h3>
                 <p className="text-slate-200 font-medium mb-4">Centennial College · Toronto, ON</p>
                 <div className="flex flex-wrap gap-2">
@@ -248,7 +249,7 @@ function Home() {
                 </div>
               </div>
               <div className="sm:text-right flex-shrink-0">
-                <p className="text-slate-300 text-sm font-medium">Sept 2024 – December 2027</p>
+                <p className="text-slate-300 text-sm font-medium">Aug 2024 – Dec 2027</p>
               </div>
             </div>
           </div>
@@ -264,18 +265,19 @@ function Home() {
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-medium mb-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Current
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                  Most Recent
                 </div>
-                <h3 className="text-xl font-bold text-white mb-1">Software Engineer Expert</h3>
-                <p className="text-slate-200 font-medium">Mercor · Remote</p>
+                <h3 className="text-xl font-bold text-white mb-1">AI Training Contractor</h3>
+                <p className="text-slate-200 font-medium">Mercor · Remote (San Francisco, CA)</p>
               </div>
-              <p className="text-slate-300 text-sm font-medium flex-shrink-0">May 2026 – Present</p>
+              <p className="text-slate-300 text-sm font-medium flex-shrink-0">May 2026 – June 2026</p>
             </div>
 
             <ul className="space-y-3">
               {[
-                'Evaluating and ranking LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
+                'Evaluated and ranked LLM outputs across coding and consulting tasks using structured rubrics, comparing model responses side by side and writing rationale for each ranking to improve model alignment',
+                'Identified hallucinations, factual inaccuracies, and safety issues in model-generated responses, documenting failure patterns and providing detailed feedback for leading AI labs',
               ].map((point, i) => (
                 <li key={i} className="flex items-start gap-3 text-slate-300 text-sm leading-relaxed">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-400 flex-shrink-0" />

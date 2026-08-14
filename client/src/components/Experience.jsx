@@ -2,16 +2,18 @@ import { Link } from 'react-router-dom';
 
 const experiences = [
   {
-    title: 'Software Engineer Expert',
+    title: 'AI Training Contractor',
     company: 'Mercor',
-    location: 'Remote',
-    duration: 'May 2026 – Present',
-    current: true,
+    location: 'Remote (San Francisco, CA)',
+    duration: 'May 2026 – June 2026',
+    current: false,
+    recent: true,
     color: 'emerald',
     points: [
-      'Evaluating and ranking LLM outputs across reasoning, coding, and instruction-following tasks to improve model alignment for leading AI labs',
+      'Evaluated and ranked LLM outputs across coding and consulting tasks using structured rubrics, comparing model responses side by side and providing written rationale for each ranking to improve model alignment',
+      'Identified hallucinations, factual inaccuracies, and safety issues in model-generated responses, documenting failure patterns and providing detailed feedback to support model improvement for leading AI labs',
     ],
-    tags: ['LLM Evaluation', 'Model Alignment', 'Reasoning', 'Coding', 'AI'],
+    tags: ['LLM Evaluation', 'Model Alignment', 'Rubrics', 'AI Safety', 'Coding'],
   },
   {
     title: 'Software Consultant Intern',
@@ -21,45 +23,42 @@ const experiences = [
     current: false,
     color: 'blue',
     highlights: [
-      { label: 'Productivity Boost', value: '+40%' },
-      { label: 'System Type', value: 'Multi-Agent' },
+      { label: 'Consultants unblocked by automation', value: '90+' },
+      { label: 'Manual processing cut', value: '10 hrs → ~0' },
     ],
     points: [
-      'Assisted in the testing and quality assurance processes to ensure that developed solutions meet client specifications and industry standards',
-      'Designed and developed a multi-agent system to resolve team miscommunications, enabling coworkers to verify information with agents and reduce deal losses',
-      'Leveraged agentic AI with Power Automate and n8n workflows, increasing productivity by 40% and driving successful deal closures and new opportunity generation',
-      'Introduced reports using PowerBI and Excel for internal workflow analysis and optimization of the processes',
-      'Contributed to development of an internal pricing tool, allowing consultants to evaluate deal profitability',
+      'Developed Python automation scripts using NumPy and scikit-learn, cutting recurring manual data processing from 10 hours to near-zero for 90+ consultants',
+      'Built an RFP (Request for Proposal) document generator using Power Automate, automating the assembly of proposal documents from structured inputs and reducing manual drafting time for the advisory team',
+      'Built and maintained Oracle SQL stored procedures for an internal pricing tool, enabling 30+ consultants to query and evaluate deal profitability directly from the database',
+      'Created Power BI dashboards connected to SQL data sources covering 5 years of advisory deals to surface workflow trends and data insights for internal stakeholders',
     ],
-    tags: ['Multi-Agent Systems', 'Agentic AI', 'LangChain', 'Python', 'n8n', 'Power Automate', 'PowerBI', 'Consulting'],
+    tags: ['Python', 'NumPy', 'scikit-learn', 'Oracle SQL', 'Power Automate', 'Power BI', 'Automation', 'Consulting'],
   },
   {
     title: 'Marketing Associate',
-    company: 'Quartermaster Inc.',
+    company: 'Quartermaster',
     location: 'Toronto, ON',
     duration: 'April 2025 – December 2025',
     current: false,
     color: 'violet',
     highlights: [
-      { label: 'GTA Conversion', value: '15%' },
-      { label: 'Referrals Collected', value: '400+' },
+      { label: 'GTA homeowner-to-user conversion', value: '15%' },
+      { label: 'Team supported', value: '11' },
     ],
     points: [
-      'Collaborated with the software team on product bugs and reported them on Slack for a resolution',
-      'Contributed to the conversion of 15% of GTA (homeowner to product user), helped with account setups and assisted in leading the team of 11 members in achieving KPIs',
-      'In 5 months, collected 400+ referrals from homeowners on home service professionals they used',
+      'Collaborated with the software team to triage and report product bugs via Jira and Slack; supported a team of 11 and helped drive a 15% homeowner-to-user conversion across the GTA',
     ],
-    tags: ['Marketing', 'Team Leadership', 'Customer Acquisition', 'Jira', 'Slack'],
+    tags: ['Bug Triage', 'Jira', 'Slack', 'Team Support', 'Customer Acquisition'],
   },
 ];
 
 const education = [
   {
     degree: 'Ontario Advanced Diploma',
-    field: 'Software Engineering & AI',
+    field: 'AI, Software Engineering Technology',
     school: 'Centennial College',
     location: 'Toronto, ON',
-    duration: 'Sept 2024 – December 2027',
+    duration: 'Aug 2024 – Dec 2027',
     status: 'In Progress',
     courses: ['OOP', 'AI Systems Design', 'Supervised Learning', 'AI Soft Test & MLOps', 'DSA', 'Networking & Intelligent Robotics', 'Advanced Database Concepts', 'Linux', 'Web App Dev', 'SDLC'],
   },
@@ -134,10 +133,10 @@ function Experience() {
                   {/* Header row */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
                     <div>
-                      {exp.current && (
+                      {(exp.current || exp.recent) && (
                         <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border ${c.badge} text-xs font-medium mb-3`}>
-                          <span className={`w-1.5 h-1.5 rounded-full ${c.dot} animate-pulse`} />
-                          Current Role
+                          <span className={`w-1.5 h-1.5 rounded-full ${c.dot} ${exp.current ? 'animate-pulse' : ''}`} />
+                          {exp.current ? 'Current Role' : 'Most Recent'}
                         </div>
                       )}
                       <h3 className={`text-lg sm:text-xl text-white font-bold ${c.title} mb-1`}>{exp.title}</h3>
