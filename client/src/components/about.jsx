@@ -3,54 +3,54 @@ import Resume from '../assets/zuhriddin_resume.pdf';
 
 function About() {
   return (
-    <div className="page-bg relative overflow-hidden">
-
-      {/* Glow orbs */}
-      <div className="glow-orb w-56 h-56 sm:w-80 sm:h-80 bg-pink-500 top-20 -left-10" />
-      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-violet-600 bottom-40 right-0" />
-
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
+    <div className="page-bg">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-20">
 
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
+          <h1 className="text-3xl sm:text-5xl font-extrabold mb-4">
             <span className="gradient-text">About Me</span>
           </h1>
         </div>
 
         {/* Main card */}
-        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden mb-8">
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden mb-8">
           <div className="flex flex-col md:flex-row">
             {/* Image */}
             <div className="md:w-64 flex-shrink-0">
               <img
                 src={zuhriddin}
                 alt="Zuhriddin Sharofiddinov"
-                className="w-full h-64 md:h-full object-cover opacity-90"
+                className="w-full h-64 md:h-full object-cover"
               />
             </div>
             {/* Bio */}
             <div className="flex-1 p-5 sm:p-8">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1">Zuhriddin (Zuck) Sharofiddinov</h2>
-              <p className="text-violet-400 font-medium mb-5">Software Engineer & AI Developer · Toronto, ON</p>
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-1">Zuhriddin (Zuck) Sharofiddinov</h2>
+              <p className="text-violet-600 font-medium mb-5">Software Engineer & Machine Learning Engineer · Toronto, ON</p>
 
-              <div className="space-y-4 text-slate-200 text-sm leading-relaxed">
+              <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
                 <p>
-                  Originally from Tashkent, Uzbekistan — a country with rich history and an increasingly tech-forward generation —
-                  I spent 3 years in marketing for international companies, including <span className="text-white font-semibold">Infinix Mobility</span>, where I gained valuable international experience.
+                  I'm a software engineer and machine learning engineer focused on building production-style ML systems and
+                  AI-driven products, from multi-agent LLM pipelines and RAG systems to TFX/Airflow training pipelines and
+                  full-stack applications. Most recently, I evaluated and improved LLM outputs as an AI Training Contractor at{' '}
+                  <span className="text-slate-900 font-semibold">Mercor</span>, and built Python automation, Oracle SQL tooling,
+                  and Power BI reporting as a Software Consultant Intern at <span className="text-slate-900 font-semibold">KPMG</span>.
                 </p>
                 <p>
-                  I made a deliberate pivot into software engineering because it sits at the intersection of business and technology —
-                  allowing me to collaborate directly with product teams and shape decisions through code. The marketing background
-                  gives me a unique lens: I build systems with the end user and business impact always in mind.
+                  My technical foundation spans the full stack: <span className="text-slate-900 font-semibold">Python</span>,{' '}
+                  <span className="text-slate-900 font-semibold">TypeScript</span>, <span className="text-slate-900 font-semibold">C#</span>, and{' '}
+                  <span className="text-slate-900 font-semibold">SQL</span>, through AI/ML frameworks like{' '}
+                  <span className="text-slate-900 font-semibold">LangChain</span>, <span className="text-slate-900 font-semibold">LangGraph</span>,{' '}
+                  <span className="text-slate-900 font-semibold">TensorFlow</span>, and <span className="text-slate-900 font-semibold">scikit-learn</span>, to
+                  infrastructure including Docker, Kubernetes, and CI/CD pipelines. I'm currently completing an{' '}
+                  <span className="text-slate-900 font-semibold">Advanced Diploma in AI &amp; Software Engineering Technology</span> at{' '}
+                  <span className="text-slate-900 font-semibold">Centennial College</span>.
                 </p>
                 <p>
-                  In two years in software engineering, I've developed skills across <span className="text-white font-semibold">Web Development</span>,{' '}
-                  <span className="text-white font-semibold">Database Management</span>, <span className="text-white font-semibold">Systems Design</span>, and{' '}
-                  <span className="text-white font-semibold">AI/ML Engineering</span>. I built Python automation, Oracle SQL tooling, and Power BI reporting as a Software Consultant Intern at{' '}
-                  <span className="text-white font-semibold">KPMG</span>, evaluated and improved LLM outputs as an AI Training Contractor at{' '}
-                  <span className="text-white font-semibold">Mercor</span>, and I'm studying AI &amp; Software Engineering Technology at{' '}
-                  <span className="text-white font-semibold">Centennial College</span>.
+                  Before software, I spent three years in marketing for international companies, including{' '}
+                  <span className="text-slate-900 font-semibold">Infinix Mobility</span>, experience that still shapes how I think
+                  about the end user and business impact behind the systems I build.
                 </p>
               </div>
             </div>
@@ -58,37 +58,30 @@ function About() {
         </div>
 
         {/* Highlights grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
           {[
-            { label: 'Origin', value: 'Tashkent, Uzbekistan', color: 'cyan' },
-            { label: 'Current Focus', value: 'Agentic AI & Full-Stack', color: 'pink' },
-          ].map((item, i) => {
-            const colorMap = {
-              violet: 'border-violet-500/30 text-violet-400',
-              cyan: 'border-cyan-500/30 text-cyan-400',
-              pink: 'border-pink-500/30 text-pink-400',
-            };
-            return (
-              <div key={i} className={`bg-slate-900/60 border ${colorMap[item.color].split(' ')[0]} rounded-2xl p-4 sm:p-5`}>
-                <p className="text-slate-300 text-xs uppercase tracking-wider font-semibold mb-1">{item.label}</p>
-                <p className={`font-bold ${colorMap[item.color].split(' ')[1]} text-sm`}>{item.value}</p>
-              </div>
-            );
-          })}
+            { label: 'Focus', value: 'ML Systems & Full-Stack Engineering' },
+            { label: 'Currently Building', value: 'Multi-Agent & RAG Systems' },
+          ].map((item, i) => (
+            <div key={i} className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5">
+              <p className="text-slate-400 text-xs uppercase tracking-wider font-semibold mb-1">{item.label}</p>
+              <p className="font-bold text-violet-600 text-sm">{item.value}</p>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
-        <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
+        <div className="flex flex-wrap gap-3 justify-center">
           <a
             href={Resume}
             download
-            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-violet-600 text-white text-sm sm:text-base font-semibold hover:bg-violet-700 transition-colors duration-200"
           >
             Download Resume
           </a>
           <a
             href="mailto:zukhriddinsh@gmail.com"
-            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg border border-slate-300 text-slate-700 text-sm sm:text-base font-semibold hover:border-violet-300 hover:text-violet-700 transition-colors duration-200"
           >
             Get in Touch
           </a>
@@ -96,7 +89,7 @@ function About() {
             href="https://www.linkedin.com/in/zuhriddinsh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25 hover:-translate-y-0.5"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg border border-slate-300 text-slate-700 text-sm sm:text-base font-semibold hover:border-violet-300 hover:text-violet-700 transition-colors duration-200"
           >
             LinkedIn ↗
           </a>

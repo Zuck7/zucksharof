@@ -10,7 +10,6 @@ function Contact() {
       label: 'Email',
       value: 'zukhriddinsh@gmail.com',
       href: 'mailto:zukhriddinsh@gmail.com',
-      color: 'violet',
     },
     {
       icon: (
@@ -21,7 +20,6 @@ function Contact() {
       label: 'Phone',
       value: '+1 (437) 214-2297',
       href: 'tel:+14372142297',
-      color: 'cyan',
     },
     {
       icon: (
@@ -32,7 +30,6 @@ function Contact() {
       label: 'LinkedIn',
       value: 'linkedin.com/in/zuhriddinsh',
       href: 'https://www.linkedin.com/in/zuhriddinsh/',
-      color: 'blue',
     },
     {
       icon: (
@@ -43,32 +40,19 @@ function Contact() {
       label: 'GitHub',
       value: 'github.com/Zuck7',
       href: 'https://github.com/Zuck7',
-      color: 'slate',
     },
   ];
 
-  const colorMap = {
-    violet: 'bg-slate-900/60 border-violet-500/20 text-violet-400 hover:border-violet-500/50',
-    cyan: 'bg-slate-900/60 border-cyan-500/20 text-cyan-400 hover:border-cyan-500/50',
-    blue: 'bg-slate-900/60 border-blue-500/20 text-blue-400 hover:border-blue-500/50',
-    slate: 'bg-slate-900/60 border-slate-700 text-slate-300 hover:border-slate-500',
-  };
-
   return (
-    <div className="page-bg relative overflow-hidden">
-
-      {/* Glow orbs */}
-      <div className="glow-orb w-56 h-56 sm:w-96 sm:h-96 bg-violet-600 top-0 left-1/4" />
-      <div className="glow-orb w-48 h-48 sm:w-72 sm:h-72 bg-cyan-500 bottom-20 right-0" />
-
-      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
+    <div className="page-bg">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-24">
 
         {/* Header */}
         <div className="text-center mb-10 sm:mb-16">
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
+          <h1 className="text-3xl sm:text-5xl font-extrabold mb-4">
             <span className="gradient-text">Get in Touch</span>
           </h1>
-          <p className="text-slate-300 text-sm sm:text-lg max-w-xl mx-auto">
+          <p className="text-slate-500 text-sm sm:text-lg max-w-xl mx-auto">
             I'm open to new opportunities, collaborations, and conversations. Don't hesitate to reach out.
           </p>
         </div>
@@ -81,33 +65,33 @@ function Contact() {
               href={item.href}
               target={item.href.startsWith('http') ? '_blank' : undefined}
               rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className={`flex items-center gap-3 p-4 sm:p-5 rounded-2xl border bg-slate-900/60 ${colorMap[item.color]} transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group`}
+              className="flex items-center gap-3 p-4 sm:p-5 rounded-2xl border border-slate-200 bg-white text-slate-500 hover:border-violet-200 hover:shadow-sm transition-all duration-200 group"
             >
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 text-slate-400 group-hover:text-violet-600 transition-colors">
                 {item.icon}
               </div>
               <div>
-                <p className="text-slate-300 text-xs font-semibold uppercase tracking-wider mb-0.5">{item.label}</p>
-                <p className="text-white font-medium text-sm group-hover:text-current transition-colors">{item.value}</p>
+                <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-0.5">{item.label}</p>
+                <p className="text-slate-900 font-medium text-sm">{item.value}</p>
               </div>
             </a>
           ))}
         </div>
 
         {/* Quick message prompt */}
-        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-8 text-center">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-500/20 to-cyan-500/20 border border-violet-500/20 flex items-center justify-center mx-auto mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-violet-400" viewBox="0 0 24 24" fill="currentColor">
+        <div className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 text-center">
+          <div className="w-14 h-14 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-violet-600" viewBox="0 0 24 24" fill="currentColor">
               <path fillRule="evenodd" d="M4.804 21.644A6.707 6.707 0 006 21.75a6.721 6.721 0 003.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 01-.814 1.686.75.75 0 00.44 1.223zM8.25 10.875a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zM10.875 12a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z" clipRule="evenodd" />
             </svg>
           </div>
-          <h2 className="text-lg sm:text-xl font-bold text-white mb-2">Let's Connect</h2>
-          <p className="text-slate-300 text-sm mb-6">
+          <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">Let's Connect</h2>
+          <p className="text-slate-500 text-sm mb-6">
             Whether it's a full-time role, co-op opportunity, freelance project, or just a chat about AI and software — I'd love to hear from you.
           </p>
           <a
             href="mailto:zukhriddinsh@gmail.com"
-            className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl from-violet-600 to-cyan-600 text-white text-sm sm:text-base font-semibold hover:from-violet-500 hover:to-cyan-500 transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/25"
+            className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-violet-600 text-white text-sm sm:text-base font-semibold hover:bg-violet-700 transition-colors duration-200"
           >
             Send an Email
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

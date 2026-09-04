@@ -15,23 +15,20 @@ function Layout() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/60">
+    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="w-9 h-9 rounded-xl overflow-hidden ring-2 ring-violet-500/30 transition-transform duration-300 group-hover:scale-110 group-hover:ring-violet-500/60">
+            <div className="w-9 h-9 rounded-xl overflow-hidden bg-slate-900 ring-1 ring-slate-200 p-1.5 transition-transform duration-300 group-hover:scale-105 group-hover:ring-violet-300">
               <img
                 src={zuck}
                 alt="logo"
-                className="w-full h-full transition duration-300 group-hover:drop-shadow-[0_0_14px_rgba(139,92,246,0.7)]"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
-          <span className="font-bold text-white text-base hidden sm:block tracking-wide">
-            <span className="text-violet-400"></span>
-          </span>
         </Link>
 
         {/* Nav links — desktop only */}
@@ -44,8 +41,8 @@ function Layout() {
                 to={link.to}
                 className={`px-4 py-2 rounded-lg text-sm font-medium no-underline hover:no-underline transition-all duration-200
                   ${isActive
-                    ? 'bg-violet-600/20 text-violet-300 border border-violet-500/30'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
+                    ? 'bg-violet-50 text-violet-700 border border-violet-200'
+                    : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100'
                   }`}
               >
                 {link.label}
@@ -60,7 +57,7 @@ function Layout() {
             href="https://www.linkedin.com/in/zuhriddinsh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 rounded-lg bg-slate-800/60 border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-200"
+            className="w-9 h-9 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 hover:text-violet-600 hover:border-violet-300 hover:bg-violet-50 transition-all duration-200"
             title="LinkedIn"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -71,7 +68,7 @@ function Layout() {
             href="https://github.com/Zuck7"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 rounded-lg bg-slate-800/60 border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 hover:bg-slate-700/60 transition-all duration-200"
+            className="w-9 h-9 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-slate-300 hover:bg-slate-50 transition-all duration-200"
             title="GitHub"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -84,7 +81,7 @@ function Layout() {
         <button
           type="button"
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-slate-300 hover:text-white transition-colors"
+          className="md:hidden text-slate-600 hover:text-slate-900 transition-colors"
           aria-label="Toggle navigation menu"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -98,7 +95,7 @@ function Layout() {
 
       {/* Mobile/tablet dropdown menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-slate-800/60 bg-slate-950/95 px-4 py-3">
+        <div className="md:hidden border-t border-slate-200 bg-white px-4 py-3">
           <div className="flex flex-col gap-1">
             {links.map((link, idx) => {
               const isActive = location.pathname === link.to;
@@ -109,8 +106,8 @@ function Layout() {
                   onClick={() => setMenuOpen(false)}
                   className={`px-3 py-2 rounded-lg text-sm font-medium no-underline hover:no-underline transition-all duration-200 ${
                     isActive
-                      ? 'bg-violet-600/20 text-violet-300 border border-violet-500/30'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/70'
+                      ? 'bg-violet-50 text-violet-700 border border-violet-200'
+                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                   }`}
                 >
                   {link.label}
@@ -119,12 +116,12 @@ function Layout() {
             })}
           </div>
 
-          <div className="mt-3 pt-3 border-t border-slate-800/60 flex items-center gap-4">
+          <div className="mt-3 pt-3 border-t border-slate-200 flex items-center gap-4">
             <a
               href="https://www.linkedin.com/in/zuhriddinsh/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-blue-400 transition-colors"
+              className="text-slate-500 hover:text-violet-600 transition-colors"
               title="LinkedIn"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -135,7 +132,7 @@ function Layout() {
               href="https://github.com/Zuck7"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors"
+              className="text-slate-500 hover:text-slate-900 transition-colors"
               title="GitHub"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">

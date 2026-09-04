@@ -10,7 +10,7 @@ import NotFound from './components/NotFound.jsx';
 
 function MainRouter(){
     return(
-        <div className="min-h-screen bg-slate-950">
+        <div className="min-h-screen bg-[#fafafa]">
             <Layout/>
             <Routes>
                 <Route path="/" element={<Home />} />
